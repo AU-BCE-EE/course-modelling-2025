@@ -1,0 +1,202 @@
+---
+title: 'Python tools for modeling I: data structures'
+author: 'Sasha D. Hafner'
+format: md
+---
+
+# 1. Overview
+This document is part of a set meant to provide you (students) with a review of basic Python tools that are important for modeling.
+Data structures are the software objects that hold the numbers or other types of data that are used in modeling.
+While it might be possible to do a lot of modeling with scalars, e.g., a real number, called a *float* in Python, putting multiple values in a single object makes writing and using the model much simpler.
+You should always know the type of object used in your code.
+Remember that the `type()` function can be used to check within Python.
+
+# 2. Scalars
+The three essential types of scalars, or single-element objects, built into Python are:
+
+* `int`: integers
+* `float`: real numbers or an approximation (float is for floating point)
+* `bool`: logical values (`True` and `False`, with bool for Boolean)
+
+In many cases we'll use these directly.
+In others they will be stored within larger data structures.
+
+```{python}
+x = 1
+print(x)
+print(type(x))
+```
+
+Integers will be converted to floats if used in arthmetic.
+
+```{python}
+print(type(x / 2))
+```
+
+```{python}
+pi = 3.14159
+print(pi)
+print(type(pi))
+```
+
+```{python}
+b = True
+print(b)
+print(type(b))
+```
+
+Boolean objects can also be converted to integers or floats.
+In that case `True` is coerced or changed into the integer 1 and `False` to 0.
+
+```{python}
+print(b + 1)
+print(type(b + 1))
+```
+
+```{python}
+print(b + 0.5)
+print(type(b + 0.5))
+```
+
+# 3. Lists
+
+Lists are can contain multiple elements.
+There are multiple ways to create them, but the simplest is with square brackets: `[` and `]`.
+For example,
+
+```{python}
+y = [1, 2.3, 4.5, 1.4]
+print(y)
+```
+
+Lists can hold any scalar type (and can even take a mix of types, but this can create confusion).
+The individual elements in a list can even be other lists.
+This feature provides a way to simulate arrays using lists.
+For example, you can effectively simulate a matrix like this
+
+```{python}
+m = [[1, 2, 3, 4], 
+    [5, 6, 7, 8],
+    [9, 10, 11, 12]]
+```
+
+What is each element of `m`?
+
+```{python}
+print(type(m[0]))
+```
+
+A list.
+And we can think of each one as a row.
+
+There are many built-in *methods* for lists.
+Remember that methods are special functions that are always associated with a particular object.
+They are called with a dot `.`.
+Below the `append()` method is used.
+
+```{python}
+y = [1, 2.3, 4.5, 1.4]
+
+y.append(10)
+
+print(y)
+```
+
+# 4. Tuples
+Tuples look similar to arrays, but there are differences.
+The most important is that tuples are *immutable*.
+
+```{python}
+t = (1, 2, 3)
+print(t)
+```
+
+Being immutable means you cannot change the value of any elements.
+This may be convenient sometimes, e.g., for model parameter storage.
+
+```{python}
+#| error: true
+t[1] = 2
+```
+
+Another difference between the two data structures is that there are fewer methods available for tuples.
+
+# 5. Arrays
+
+Proper arrays are typically better than lists (and certainly tuples) for working with array-like data when developing models in Python.
+There are many different ways to create NumPy arrays.
+For example, we can use lists.
+Here is a one-dimensional (1D) array, or a vector, for example.
+
+```{python}
+import numpy as np
+
+a = np.array([1, 2, 3, 4])
+print(a)
+print(type(a))
+```
+
+Lists can even be used to create arrays with more dimensions.
+
+```{python}
+a2 = np.array([[1, 2], 
+               [3, 4]])
+
+print(a2)
+               
+a3 = np.array([[[1, 2], [3, 4]], 
+               [[5, 6], [7, 8]]])
+
+print(a3)
+```
+
+You can check the dimensions with the `shape` attribute.
+
+```{python}
+print(a.shape)
+print(a2.shape)
+print(a3.shape)
+```
+
+Or, for just the number of dimensions,
+
+```{python}
+print(len(a3.shape))
+```
+
+There are other convenient ways to make arrays.
+Here are a few.
+
+```{python}
+z1 = np.zeros(10)
+print(z1)
+
+z2 = np.zeros((3, 3))
+print(z2)
+
+z3 = np.zeros((2, 2, 2))
+print(z3)
+```
+
+There is also a `ones()` function in NumPy.
+
+# 6. DataFrames
+
+The pandas package provides a data structure suitable for *tabular* data called a data frame, or, in pandas parlance, a *DataFrame* (note the capitalization, but "pandas" itself is not capitalized).
+Unlike an array, a data frame can contain data of different types.
+See the `mm` object below for an example.
+
+```{python, include = FALSE}
+import pandas as pd
+mm = pd.read_csv('../data/mol_mass.csv', skiprows = 0)
+```
+
+```{python}
+print(mm)
+```
+
+These molar mass have data of type string in the first column, and floating point in the second.
+The `mm` DataFrame has *column names*, which can be used to refer to individual columns.
+
+The pandas package provides tools for processing complete DataFrames or individual columns.
+And it contains features to maintain the connections between the columns, so, for example, the formula in the second row is always associated with the correct molar mass.

@@ -1,0 +1,206 @@
+---
+title: 'Confusion on mutability and references'
+author: 'Sasha D. Hafner'
+format: md
+---
+
+# Overview
+This note is an attempt to explain some confusing behavior that you might have noticed in some of the problems for Chapter 5.
+
+# Environments
+In Python the software "space" that holds any variables or other objects you have defined or loaded is called an environment. 
+This term is used for other programming languages as well. 
+Every time you run Python you are working in a new environment, and you do not have access to objects created in previous work unless they are loaded.
+
+The environment that has all your objects is called the "global" environment. 
+Functions have their own separate environment, which is a good thing! 
+Imagine if some of the variables you defined were inadvertently changed after running an unrelated function call just because some of the same names were used in the function code! 
+That would be a mess.
+
+# Mutable and immutable objects
+In Python some objects are mutable, meaning their individual elements can be changed, and some are immutable, and they must be overwritten to be changed. 
+Strings, tuples, and individual numbers (like integers and floats) are immutable. 
+Lists, dictionaries, sets, arrays, and DataFrames are all mutable.
+
+# What does it mean?
+There are two tricky points you need to be aware of. 
+
+## Point 1
+When you refer to a mutable object you create a reference, not a copy. So in the code below, both b and c will change whenever you change a. But the same is not true for y and z. Try it!
+
+1. Create three variables, modify `a`, and see that `b` and `c` also change.
+   
+```{python}
+a = [1, 2, 3]
+b = a
+c = b
+
+# Modify a
+a.remove(1)
+
+# b and c change too!
+print(a)
+print(b)
+print(c)
+```
+
+2. Here as well, where we use indexing to change one element in `a`.
+
+```{python}
+a[0] = 10
+
+print(a)
+print(b)
+print(c)
+```
+
+3. And here as well, because although we changed all elements, we used indexing.
+   
+```{python}
+a[:] = [10, 100, 1000]
+
+print(a)
+print(b)
+print(c)
+```
+
+4. But here the reference is broken because we have replaced a, not changed part of it.
+
+```{python}
+a = [10, 100]
+print(a)
+print(b)
+print(c)
+```
+
+5. And we can also make a copy with the `.copy()` method to avoid creating a reference.
+   So here, `b` and `c` do not change with `a`.
+   
+```{python}
+a = [1, 2, 3]
+b = a.copy()
+c = b.copy()
+
+# Modify a
+a.remove(1)
+
+# b and c do not change
+print(a)
+print(b)
+print(c)
+```
+
+6. And for immutable objects, y and z will never change when we change x
+
+```{python}
+x = 1
+y = x
+z = y
+
+x = 0
+print(x)
+print(y)
+print(z)
+```
+
+## Point 2. 
+When you pass a mutable object as a function argument (parameter), you are really passing a reference. 
+This means that if the function changes that variable, the original variable in your global environment will also change. 
+Compare the two examples below. 
+Which ones changes a variable in your global environment?
+
+```{python}
+def fup1(x):
+    x[0] = 0
+    return(x)
+```
+
+```{python}
+def fup2(x):
+    x = x.copy()
+    x[0] = 0
+    return(x)
+```
+
+```{python}
+def fup3(x):
+    y = [0] * len(x)
+    return(y)
+```
+
+```{python}
+def fup4(x):
+    y = x
+    y[0] = 0
+    return(y)
+```
+
+
+
+```{python}
+x = [1, 2, 3]
+
+fup1(x)
+print(x)
+```
+
+```{python}
+x = [1, 2, 3]
+
+fup2(x)
+print(x)
+```
+
+```{python}
+x = [1, 2, 3]
+
+fup3(x)
+print(x)
+```
+
+So only `fup1()` changes our `x` in the global environment.
+Note that this was done without any assignment in our global environment.
+If we use an assignment expression, any of these functions will change our `x`.
+See?
+
+```{python}
+x = [1, 2, 3]
+
+x = fup3(x)
+print(x)
+```
+
+Also note that the names of variables we use in our function code are completely irrelevant to this behavior.
+See `fup2()` code for example, where we used `x`.
+We could have used `x` instead of `y` in `fup3()` as well.
+Conversely, using a differnt name does not eliminate the reference!
+See what `fup4()` does:
+
+```{python}
+x = [1, 2, 3]
+
+fup4(x)
+print(x)
+```
+
+Even with `y` instead of `x` our global `x` is changed, despite not having any assignment in our code.
+
+Note that none of this matters for immutable objects.
+
+```{python}
+def fut1(x):
+    x -= 2
+    return(x)
+
+```
+
+```{python}
+x = 10
+
+fut1(x)
+print(x)
+```
+
+# Take-home message
+Be careful when working with mutable objects.
+If you want to work with a copy of an object, use the `.copy()` method.
