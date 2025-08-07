@@ -11,3 +11,4 @@
 9. Compare direct energy consumption for a car, bus, and bike trip from your home to this room.
 10. Goats walk around with very large abdomens while mountain lions, in contrast, do not. Can you propose a reason and support it with some quantitative estimates?
 11. What processes change the temperature of water as it flows over Niagara Falls (between US and Canada)? Can you estimate the effect of them? 
+12. What is the residence time of CO₂ in the atmosphere? How about in the oceans?
