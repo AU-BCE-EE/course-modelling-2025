@@ -48,3 +48,7 @@ A few of these terms are used in Python as well.
 1. Equation
 1. Expression
 1. Unit conversion
+1. Pool
+1. Stock
+1. Reservoir
+1. Compartment

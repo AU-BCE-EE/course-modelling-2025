@@ -19,3 +19,4 @@ The following terms are important for mass or heat transfer.
 1. Mass transfer coefficient
 1. Latent heat
 1. Sensible heat
+1. Retention time
