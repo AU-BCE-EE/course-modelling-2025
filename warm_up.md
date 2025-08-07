@@ -9,3 +9,4 @@
 7. Global shipping emits somewhere around 700 million Mg (metric tons or tonnes) of CO₂ per year (700 Tg yr⁻¹). Is this value consistent with reported global fuel consumption of around 200 Tg yr⁻¹?
 8. Ammonia has been proposed as a shipping fuel. In the simplest approach, it would be combusted in engines using oxygen (O₂) from air to produce mainly dinitrogen (N₂) and water (H₂O). Assuming heavy oil fuel consumption is currently 200 Tg yr⁻¹, what flow of ammonia would be required for substitution?
 9. Compare direct energy consumption for a car, bus, and bike trip from your home to this room.
+10. Goats walk around with very large abdomens while mountain lions, in contrast, do not. Can you propose a reason and support it with some quantitative estimates?
