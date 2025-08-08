@@ -1,6 +1,6 @@
 # Warm-up problems for class
 
-1. Estimate that rate of heat released by the people in this room in W. 
+1. Estimate that rate of heat released by the people in this room in kW. 
 2. Estimate the change in the speed of wind as it passes through a wind turbine. 
 3. Estimate the volume of gas that a typical dairy cow burps each day based on an emission factor of 6.5%. This emission factor is the fraction of consumed energy lost as methane.
 4. Estimate the tension that a parachute must withstand to support the descent of a typical human (terminal velocity). Now estimate how much more might be needed for the deployment phase.
@@ -12,3 +12,4 @@
 10. Goats walk around with very large abdomens while mountain lions, in contrast, do not. Can you propose a reason and support it with some quantitative estimates?
 11. What processes change the temperature of water as it flows over Niagara Falls (between US and Canada)? Can you estimate the effect of them? 
 12. What is the residence time of CO₂ in the atmosphere? How about in the oceans?
+13. Estimate the number of barbers/hair stylists in Denmark by thinking about rates.
