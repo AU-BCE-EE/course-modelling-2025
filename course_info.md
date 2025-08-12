@@ -39,6 +39,20 @@ Active participation in class will help you learn, and it will generally make th
 Participation makes things easier for us, the instructors, as well, because your questions, answers, and comments help us guage your understanding and interest.
 So please make an effort to engage in the topic and participate in class!
 
+# Content and teaching approach
+There are many different ways that a modeling course could be run.
+Here we plan to stress: 1) an intuitive understanding of general principles and approaches for model development and 2) practical Python implementation.
+We aim for you to be able to tackle a wide range of modeling problems after class without relying on proprietary software.
+You will do more numerical modeling than symbolic math and analytical modeling in this class, but you will do both approaches.
+
+For better or worse, modeling is as much an art as a science, and even with a set of model formulation steps, most of us need a lot of practice in order to develop a useful model for a new system.
+We will try to provide many opportunities for practice as part of this course.
+
+Models do not need to be complex.
+In some cases a useful model can be developed in a few minutes with paper and a pencil.
+The process of understanding a new system, developing such a model, and recognizing its limitations, can be surprisingly helpful in research and more.
+We will use short "warm-up" problems in class for this kind of practice.
+
 # Short assignments
 The more modeling you do--the more effort you put into sketching out models, writing conservation and rate equations, writing Python code, and debugging models--the more you will learn in this course.
 We will use regular weekly assignments to help.
@@ -66,5 +80,12 @@ Please do not use AI for completing assignments.
 We will discuss AI more in class, and look at some ways you could use it that we might support.
 Also remember that AU has an AI policy here: <https://medarbejdere.au.dk/en/gai>.
 And lastly, remember that you cannot use AI on the exam for this course.
+
+# Reading materials
+As with any class, you are responsible for your own learning.
+Part of your learning in this class will come from independent reading.
+Rasmuson. . .
+Others. . .
+
 
 
