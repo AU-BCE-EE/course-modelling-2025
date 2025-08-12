@@ -87,5 +87,8 @@ Part of your learning in this class will come from independent reading.
 Rasmuson. . .
 Others. . .
 
-
-
+# Git and GitHub
+Git and GitHub are software tools for tracking changes to files and collaborating in writing computer code.
+They can drastically improve the efficiency of collaborative programming, and anyone serious about modeling should be aware of them.
+We do not expect to give you more than a very brief introduction to them in this course.
+But you will interact with GitHub in this course to view and download files.
