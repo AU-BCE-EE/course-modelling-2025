@@ -1,5 +1,5 @@
 Date,Class,Course Week,Year week,Day,Time,Teacher,Reading,Topic,Assignment
-'26/08/2025,1,1,35,Tuesday,12:00-14:00,Frederik ,Rasmuson Chapters 1 & 2,"Introduction to course, purpose of models, model classification, the modelling procedure",1
+"26/08/2025",1,1,35,Tuesday,12:00-14:00,Frederik ,Rasmuson Chapters 1 & 2,"Introduction to course, purpose of models, model classification, the modelling procedure",1
 '28/08/2025,2,1,35,Thursday,08:00:10:00,Sasha,Rasmuson Chapter 3,Model formulation and conservation and rate equations,
 '02/09/2025,3,2,36,Tuesday,12:00-14:00,Sasha,"Incropera Sections 1.1-1.2, py_data.md",Heat transfer and analytical models in Python,2
 '04/09/2025,4,2,36,Thursday,08:00:10:00,Sasha,Cussler Chapter 1,Mass transfer and finite difference method,
