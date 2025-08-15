@@ -52,6 +52,7 @@ A few of these terms are used in Python as well.
 1. Stock
 1. Reservoir
 1. Compartment
+1. Stability
 
 # Transport terms
 The following terms are important for mass or heat transfer.
