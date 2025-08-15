@@ -2,10 +2,10 @@
 
 1. Fish transport dissolved oxygen from water into their bloodstream through gills.
 Early work on the topic suggests that most of the resistance for this transport comes from a water film outside the gills. 
-Bulk oxygen concentration depends on temperature and consumption rate, but you may assume it is 7 mg L⁻¹.
-In the blood, free oxygen rapidly reacts with hemoglobin, so it is reasonable to assume a concentration of zero.
+Bulk oxygen concentration depends on temperature and consumption rate, but you may assume it is 10 mg L⁻¹, which might be the case for cool, clean water.
+In the blood, free oxygen rapidly reacts with hemoglobin.
 How fast can oxygen diffuse in?
-An increase in water flow over gills could reduce film thickness from 50 down to 20 μm.
+An increase in water flow over gills might reduce effective film thickness from 50 down to 20 μm.
 What effect would this have on the rate?
 You can assume a diffusivity of 2 x 10⁻⁹ m⁻² s⁻¹.
 
