@@ -26,7 +26,7 @@ We expect that a typical class will be run something like this:
 | Lecture                          | 30                 |   45        |
 | Break                            |  5                 |   50        |
 | Lecture                          | 20                 |   70        |
-| Quiz                             | 10                 |   80        |
+| Quiz/Discussion                  | 10                 |   80        |
 | Work on new assignment           | 20                 |  100        |
 
 You should be sure to always bring a laptop with Python 3 and Spyder or your preferred script editor installed to class.
@@ -71,6 +71,12 @@ But please keep the group size to no more than three students.
 
 With or without a homework group, you should try to avoid copying and pasting Python code. 
 You will learn and ultimately understand Python and modeling better if you type and debug code yourself.
+
+# Mini Projects
+We will dedicate time to work on two-three mini projects. The mini projects are broader than the ordinary assignments and exercises we do in class and will therefore also take a little more effort. 
+For the mini-projects you will work as a modeller and the subject will typically be less strictly defined than the class assignments. 
+These mini-projects will be conducted in groups of 3-5 students and submitted. The instructors will provide feed-back. 
+Ultimately, the mini-projects will be somewhat similar in structure to the final exam group report that will be used at the oral exam. 
 
 # AI tools
 ChatGPT and other generative artificial intelligence tools can be extremely good at writing Python code and much more besides.
