@@ -8,8 +8,9 @@ A few of these terms are used in Python as well.
 1. Parameter
 1. Parameter estimation
 1. Empirical model
+1. Deterministic model
 1. Mechanistic model
-1. Analyitical model
+1. Analytical model
 1. Numerical model
 1. Box model
 1. Stagewise process
@@ -19,8 +20,10 @@ A few of these terms are used in Python as well.
 1. Equilibrium
 1. Lumped-parameter model
 1. Distributed-parameter model
+1. Coupling
 1. State variable
 1. Derivative
+1. Partial derivative
 1. Rate
 1. Conservation equation
 1. Mass balance
@@ -32,6 +35,8 @@ A few of these terms are used in Python as well.
 1. Computer model
 1. Flow
 1. Flux
+1. Convection
+1. Advection
 1. Unit 
 1. Dimension
 1. Dimensions
@@ -75,3 +80,25 @@ The following terms are important for mass or heat transfer.
 1. Latent heat
 1. Sensible heat
 1. Retention time
+
+# Solution methods
+The following terms are important for how we solve models
+
+1. Discretization
+1. Method of lines
+1. Forward difference
+1. Backward difference
+1. Central difference
+1. Finite difference
+1. Stability
+1. Jacobian
+1. Upwind/upstream scheme
+1. Explicit
+1. Implicit
+1. Coordinates
+1. Dirichlet boundary
+1. Neumann boundary
+1. Robin boundary
+1. Ghost point
+1. Symmetry
+1. Initial condition
