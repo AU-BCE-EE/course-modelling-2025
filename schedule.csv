@@ -1,9 +1,9 @@
 Date,Class,Course Week,Year week,Day,Time,Teacher,Reading,Topic,Assignment
-"26/08/2025",1,1,35,Tuesday,12:00-14:00,Frederik ,Rasmuson Chapters 1 & 2,"Introduction to course, purpose of models, model classification, the modelling procedure",1
+"26/08/2025",1,1,35,Tuesday,12:00-14:00,Frederik ,Rasmuson Chapters 1 & 2,"Introduction to course, purpose of models, model classification, the modelling procedure",
 "28/08/2025",2,1,35,Thursday,08:00:10:00,Sasha,Rasmuson Chapter 3,Model formulation and conservation and rate equations,
-"02/09/2025",3,2,36,Tuesday,12:00-14:00,Sasha,"Incropera Sections 1.1-1.2, py_data.md",Heat transfer and analytical models in Python,2
+"02/09/2025",3,2,36,Tuesday,12:00-14:00,Sasha,"Incropera Sections 1.1-1.2, py_data.md",Heat transfer and analytical models in Python,1
 "04/09/2025",4,2,36,Thursday,08:00:10:00,Sasha,Cussler Chapter 1,Mass transfer and finite difference method,
-"09/09/2025",5,3,37,Tuesday,12:00-14:00,Sasha,"Cussler Section 8.5, Kong Section 22.6",Interphase interface mass transfer and solve_ivp(),3
+"09/09/2025",5,3,37,Tuesday,12:00-14:00,Sasha,"Cussler Section 8.5, Kong Section 22.6",Interphase interface mass transfer and solve_ivp(),2
 "11/09/2025",6,3,37,Thursday,08:00:10:00,Frederik ,,Mini-project,
 "16/09/2025",7,4,38,Tuesday,12:00-14:00,Frederik ,,Mini-project,
 "18/09/2025",8,4,38,Thursday,08:00:10:00,Frederik ,"Edsberg notes, Python book chap 20/Snape p 219",PDEs and MOL 1D directlet,
