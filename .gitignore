@@ -1,3 +1,9 @@
+# All html docs - these are for local viewing only
+*.html
+
+# All html files
+*_files/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
