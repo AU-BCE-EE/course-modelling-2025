@@ -1,4 +1,4 @@
-# Residence time function demo
+# Residence time simulation
 Sasha D. Hafner
 
 # Overview
@@ -45,7 +45,7 @@ out = rtsim(1E4, 100, 100, 1, 1000)
 np.mean(out)
 ```
 
-    98.1758
+    99.0773
 
 1.  Increase flow.
 
@@ -54,7 +54,7 @@ out = rtsim(1E4, 200, 200, 1, 1000)
 np.mean(out)
 ```
 
-    49.3689
+    49.4824
 
 1.  Decrease flow
 
@@ -63,7 +63,7 @@ out = rtsim(1E4, 10, 10, 1, 1000)
 np.mean(out)
 ```
 
-    629.9369
+    634.921
 
 ``` python
 out.size
@@ -78,7 +78,7 @@ out = rtsim(1E4, 102, 100, 1, 1000)
 np.mean(out)
 ```
 
-    114.50941666666667
+    114.612
 
 ``` python
 out.size
@@ -108,7 +108,7 @@ out = rtsim(1E4, 100, 102, 1, 1000)
 np.mean(out)
 ```
 
-    80.82625
+    80.896375
 
 ``` python
 out.size / 102

@@ -1,8 +1,6 @@
 ---
-title: "Residence time function demo"
+title: "Residence time simulation"
 author: "Sasha D. Hafner"
-output_format:
-  gfm: default
 ---
 
 # Overview
