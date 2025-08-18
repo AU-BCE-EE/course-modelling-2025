@@ -26,13 +26,13 @@ We expect that a typical class will be run something like this:
 | Lecture                          | 30                 |   45        |
 | Break                            |  5                 |   50        |
 | Lecture                          | 20                 |   70        |
-| Quiz/Discussion                  | 10                 |   80        |
+| Quiz/discussion                  | 10                 |   80        |
 | Work on new assignment           | 20                 |  100        |
 
 You should be sure to always bring a laptop with Python 3 and Spyder or your preferred script editor installed to class.
-But also bring a notebook and a pen or pencil to each class.
+But also bring a notebook (paper!) and a pen or pencil to each class.
 
-We will present some slides or notes in most classes, and will generally make some form of these materials available to students.
+We will present some slides or notes in most classes, and will generally make some form of these materials available to students *after* class.
 But these files of course cannot include everything we say or show, so you should expect to have an approach to take notes during class.
 
 Active participation in class will help you learn, and it will generally make the class more effective for everyone.
@@ -43,14 +43,15 @@ So please make an effort to engage in the topic and participate in class!
 There are many different ways that a modeling course could be run.
 Here we plan to stress: 1) an intuitive understanding of general principles and approaches for model development and 2) practical Python implementation.
 We aim for you to be able to tackle a wide range of modeling problems after class without relying on proprietary software.
-You will do more numerical modeling than symbolic math and analytical modeling in this class, but you will do both approaches.
+Of course mathematics is required, but symbolic mathematics will not be the main focus.
+You will do more numerical modeling than symbolic math and analytical modeling in this class, but both analytical and numerical approaches will be included.
 
 For better or worse, modeling is as much an art as a science, and even with a set of model formulation steps, most of us need a lot of practice in order to develop a useful model for a new system.
 We will try to provide many opportunities for practice as part of this course.
 
 Models do not need to be complex.
 In some cases a useful model can be developed in a few minutes with paper and a pencil.
-The process of understanding a new system, developing such a model, and recognizing its limitations, can be surprisingly helpful in research and more.
+The process of understanding a new system, developing such a model, and recognizing its limitations can be surprisingly helpful in research and more.
 We will use short "warm-up" problems in class for this kind of practice.
 
 # Short assignments
@@ -72,29 +73,35 @@ But please keep the group size to no more than three students.
 With or without a homework group, you should try to avoid copying and pasting Python code. 
 You will learn and ultimately understand Python and modeling better if you type and debug code yourself.
 
-# Mini Projects
-We will dedicate time to work on two-three mini projects. The mini projects are broader than the ordinary assignments and exercises we do in class and will therefore also take a little more effort. 
+# Mini-projects
+We will dedicate time to work on two or three mini-projects. 
+The mini projects are broader than the ordinary assignments and exercises we do in class and will therefore also take a little more effort. 
 For the mini-projects you will work as a modeller and the subject will typically be less strictly defined than the class assignments. 
-These mini-projects will be conducted in groups of 3-5 students and submitted. The instructors will provide feed-back. 
+These mini-projects will be conducted in groups of 3-5 students and submitted. 
+We (the instructors) will provide feedback on your submissions. 
 Ultimately, the mini-projects will be somewhat similar in structure to the final exam group report that will be used at the oral exam. 
 
 # AI tools
 ChatGPT and other generative artificial intelligence tools can be extremely good at writing Python code and much more besides.
 We don't know what the future of education or work in science and engineering will look like in the coming years or decades, and AI will almost certainly change both.
 But for now, we and society still expect students to learn knowledge and skills beyond asking a chatbot questions. 
-Please do not use AI for completing assignments.
+So please do not use AI for completing assignments!
 We will discuss AI more in class, and look at some ways you could use it that we might support.
 Also remember that AU has an AI policy here: <https://medarbejdere.au.dk/en/gai>.
 And lastly, remember that you cannot use AI on the exam for this course.
 
 # Reading materials
 As with any class, you are responsible for your own learning.
-Part of your learning in this class will come from independent reading.
-Rasmuson. . .
-Others. . .
+Part of your learning in this class will come from independent reading, and we will usually assign reading material for each class.
+You should check the [class schedule](https://github.com/AU-BCE-EE/course-modelling-2025/blob/main/schedule.csv) before class for reading assignments.
+Our course text is:
+
+Rasmuson, A. et al. 2014. Mathematical Modeling in Chemical Engineering. Cambridge University Press. 183 pp.
+
+We will provide copies of other reading material when assigned.
 
 # Git and GitHub
 Git and GitHub are software tools for tracking changes to files and collaborating in writing computer code.
-They can drastically improve the efficiency of collaborative programming, and anyone serious about modeling should be aware of them.
-We do not expect to give you more than a very brief introduction to them in this course.
-But you will interact with GitHub in this course to view and download files.
+They can drastically improve the efficiency of collaborative programming, and anyone serious about modelling should be aware of them.
+In this course, you will interact with GitHub only to view and download files.
+But just be aware that these tools are used for much more!
