@@ -1,0 +1,68 @@
+---
+title: "Residence time function and demo"
+author: "Sasha D. Hafner"
+output_format:
+  gfm: default
+---
+
+```{r}
+p0 <- 100
+r_in <- 10
+r_out <- 10
+dt <- 1
+time <- 10
+
+rtsim <- function(p0, r_in, out, dt, time) {
+
+  # Create initial pool
+  p <- data.frame(key = 1:p0, age = 0)
+
+  # And other pool
+  o <- data.frame()
+
+  n <- time %/% dt
+
+  # Loop through times
+  for (t in 1:n) {
+
+    # Add new keys
+    new_keys <- 1:r_in + max(p$key)
+
+    # Select random keys for removal
+    old_keys <- sample(p$key, r_out)
+
+    # Update age
+    p$age <- p$age + dt
+
+    # And other pool
+    oi <- data.frame(iteration = t, p[p$key %in% old_keys, ]) 
+    o <- rbind(o, oi)
+
+    # Update pool
+    p <- rbind(p[!p$key %in% old_keys, ], data.frame(key = new_keys, age = 0))
+    
+  }
+
+  return(list(current = p, exited = o))
+
+}
+  
+
+```
+
+```{r}
+out <- rtsim(1000, 100, 100, 1, 1000)
+```
+
+```{r}
+plot(age ~ iteration, data = out[[2]])
+hist(out[[1]]$age)
+mean(out[[1]]$age)
+median(out[[1]]$age)
+```
+
+
+
+
+
+
