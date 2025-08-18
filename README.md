@@ -25,4 +25,6 @@ Just click the file name or relevant link to view a GitHub rendering of each fil
 The files with an `.md` extension are "Markdown" files intended for reading on GitHub.
 And you are all familiar with the `.pdf` extension.
 These two file types are usually the versions you should be opening, not the `.xopp` or `.qmd` files, which are the versions that we (the instructors) create or edit, and are only included here because it greatly simplifies our workflow to have the source and the final version in a single repo.
+In some cases csv files with the `.csv` extension are used to make a table, e.g., with the class schedule.
+All three of these files are displayed clearly on GitHub.
 To download a file, use the "download" button generally shown at the top right of the file page.
