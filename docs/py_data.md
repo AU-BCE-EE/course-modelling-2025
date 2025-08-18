@@ -233,7 +233,7 @@ y
 
 # 4. Tuples
 
-Tuples look similar to arrays, but there are differences. The most
+Tuples look similar to lists, but there are differences. The most
 important is that tuples are *immutable*.
 
 ``` python
@@ -451,8 +451,30 @@ out
 
     {'model': 'Diff1D', 'iterations': 3, 'fit': 0.9}
 
-Of course their utility is better when the values are linked to symbolic
-variables!
+Of course they are more useful when the values are linked to symbolic
+variables! The keys (names) are used to extact or set elements.
+
+``` python
+out['fit']
+```
+
+    0.9
+
+There is also a `get()` method.
+
+``` python
+out.get('fit')
+```
+
+    0.9
+
+And the `keys()` method is handy for larger dictionaries.
+
+``` python
+out.keys()
+```
+
+    dict_keys(['model', 'iterations', 'fit'])
 
 # 7. DataFrames
 
@@ -502,9 +524,21 @@ What if we want to work with a column of data? We can use either a dot
 
 ``` python
 print(mm.mol_mass)
+```
+
+    0     32.042
+    1     92.134
+    2     68.114
+    3    106.118
+    4     58.078
+    5     44.052
+    6     60.052
+    7     72.104
+    8    136.228
+    Name: mol_mass, dtype: float64
+
+``` python
 mm_vals = mm.mol_mass
-print(mm_vals)
-mm_vals = mm['mol_mass']
 print(mm_vals)
 ```
 
@@ -518,16 +552,12 @@ print(mm_vals)
     7     72.104
     8    136.228
     Name: mol_mass, dtype: float64
-    0     32.042
-    1     92.134
-    2     68.114
-    3    106.118
-    4     58.078
-    5     44.052
-    6     60.052
-    7     72.104
-    8    136.228
-    Name: mol_mass, dtype: float64
+
+``` python
+mm_vals = mm['mol_mass']
+print(mm_vals)
+```
+
     0     32.042
     1     92.134
     2     68.114
@@ -577,8 +607,8 @@ print(mm_vals3)
 
     [ 32.042  92.134  68.114 106.118  58.078  44.052  60.052  72.104 136.228]
 
-Confused? It gets a bit worse, unfortunately: originally the pandas
-documentation recommended using the `.values` attribute to get the
-underlying values, but does no longer (see here for some explanation:
+Originally the pandas documentation recommended using the `.values`
+attribute to get the underlying values, but does no longer (see here for
+some explanation:
 <https://pandas.pydata.org/docs/user_guide/basics.html>). But you will
 still see `.values` in answers and more online.

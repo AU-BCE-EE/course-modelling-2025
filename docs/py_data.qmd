@@ -186,7 +186,7 @@ y
 ```
 
 # 4. Tuples
-Tuples look similar to arrays, but there are differences.
+Tuples look similar to lists, but there are differences.
 The most important is that tuples are *immutable*.
 
 ```{python}
@@ -341,7 +341,24 @@ out = {
 out
 ```
 
-Of course their utility is better when the values are linked to symbolic variables!
+Of course they are more useful when the values are linked to symbolic variables!
+The keys (names) are used to extact or set elements.
+
+```{python}
+out['fit']
+```
+
+There is also a `get()` method.
+
+```{python}
+out.get('fit')
+```
+
+And the `keys()` method is handy for larger dictionaries.
+
+```{python}
+out.keys()
+```
 
 # 7. DataFrames
 
@@ -372,8 +389,14 @@ We can use either a dot `.` or the general Python and NumPy indexing operator sq
 
 ```{python}
 print(mm.mol_mass)
+```
+
+```{python}
 mm_vals = mm.mol_mass
 print(mm_vals)
+```
+
+```{python}
 mm_vals = mm['mol_mass']
 print(mm_vals)
 ```
@@ -407,7 +430,6 @@ mm_vals3 = mm.mol_mass.to_numpy()
 print(mm_vals3)
 ```
 
-Confused?
-It gets a bit worse, unfortunately: originally the pandas documentation recommended using the `.values` attribute to get the underlying values, but does no longer (see here for some explanation: <https://pandas.pydata.org/docs/user_guide/basics.html>).
+Originally the pandas documentation recommended using the `.values` attribute to get the underlying values, but does no longer (see here for some explanation: <https://pandas.pydata.org/docs/user_guide/basics.html>).
 But you will still see `.values` in answers and more online.
 
