@@ -1,15 +1,26 @@
 ---
-title: 'Python tools for modeling I: data structures'
+title: 'Python data structures for modeling'
 author: 'Sasha D. Hafner'
-format: md
+format: 
+  html:
+    self-contained: false
+  gfm: default
 ---
 
 # 1. Overview
-This document is part of a set meant to provide you (students) with a review of basic Python tools that are important for modeling.
+This document provides a review of basic Python structures that are important for modeling.
 Data structures are the software objects that hold the numbers or other types of data that are used in modeling.
 While it might be possible to do a lot of modeling with scalars, e.g., a real number, called a *float* in Python, putting multiple values in a single object makes writing and using the model much simpler.
 You should always know the type of object used in your code.
 Remember that the `type()` function can be used to check within Python.
+The multi-element data structures covered in this document are summarized in the table below.
+
+| Structure  | Mutable?|  Example usage                   | More details |
+|------------|-------- |----------------------------------|-------|
+| list       | Yes     |  Input data, sequences           | Many methods, append(), pop(), etc. |
+| tuple      | No      |  Fixed sequences, parameters     | Fewer methods                 |
+| array      | Yes     |  Efficient numerical computation | Supports element-wise (vectorized) math    |
+| dictionary | Yes     |  Output with named elements      | Get element values with keys  |
 
 # 2. Scalars
 The three essential types of scalars, or single-element objects, built into Python are:
@@ -18,7 +29,7 @@ The three essential types of scalars, or single-element objects, built into Pyth
 * `float`: real numbers or an approximation (float is for floating point)
 * `bool`: logical values (`True` and `False`, with bool for Boolean)
 
-In many cases we'll use these directly.
+In some cases we'll use these directly.
 In others they will be stored within larger data structures.
 
 ```{python}
@@ -46,7 +57,7 @@ print(type(b))
 ```
 
 Boolean objects can also be converted to integers or floats.
-In that case `True` is coerced or changed into the integer 1 and `False` to 0.
+In that case `True` is coerced (changed) into the integer `1` and `False` to `0`.
 
 ```{python}
 print(b + 1)
@@ -56,6 +67,14 @@ print(type(b + 1))
 ```{python}
 print(b + 0.5)
 print(type(b + 0.5))
+```
+
+Lastly, strings are used for storing text data in Python.
+Double or single quotes can be used, but double are more common.
+
+```{python}
+s = "Time (h)"
+print(s)
 ```
 
 # 3. Lists
@@ -88,6 +107,7 @@ print(type(m[0]))
 
 A list.
 And we can think of each one as a row.
+But the array functionality from the NumPy package is more efficient and we'll use that approach in this course.
 
 There are many built-in *methods* for lists.
 Remember that methods are special functions that are always associated with a particular object.
@@ -102,6 +122,69 @@ y.append(10)
 print(y)
 ```
 
+Lists support indexing or slicing, which is a powerful tool for data manipulation that will be used extensively in our course.
+For example, we can extract the first element like this.
+
+```{python}
+y[0]
+```
+
+Second element.
+
+```{python}
+y[1]
+```
+
+For reference, here is the entire list again.
+
+```{python}
+y
+```
+
+Here is syntax for the last element.
+
+```{python}
+y[-1]
+```
+
+Or take what is called a "slice" using a colon operator.
+
+```{python}
+y[1:3]
+```
+
+This gives elements in position 1 and 2, which is confusing for many.
+Note that the syntax is the same as the `range()` function.
+
+Omitting one of the indices returns everything *from* or *up to* the other index.
+
+```{python}
+y[1:]
+y[:1]
+```
+
+```{python}
+y[2:]
+y[:2]
+```
+
+Indexing can be used for assignment as well.
+
+```{python}
+y
+y[1] = 0
+y
+```
+
+But to use the slice notation to assign to more than one position, we need a list (or other "iterable") on the right, like this.
+
+
+```{python}
+y
+y[1:3] = [100, -100]
+y
+```
+
 # 4. Tuples
 Tuples look similar to arrays, but there are differences.
 The most important is that tuples are *immutable*.
@@ -109,6 +192,12 @@ The most important is that tuples are *immutable*.
 ```{python}
 t = (1, 2, 3)
 print(t)
+```
+
+Indexing is similar to lists.
+
+```{python}
+t[2]
 ```
 
 Being immutable means you cannot change the value of any elements.
@@ -121,9 +210,10 @@ t[1] = 2
 
 Another difference between the two data structures is that there are fewer methods available for tuples.
 
+
 # 5. Arrays
 
-Proper arrays are typically better than lists (and certainly tuples) for working with array-like data when developing models in Python.
+Proper NumPy arrays are typically better than lists (and certainly tuples) for working with array-like data when developing models in Python.
 There are many different ways to create NumPy arrays.
 For example, we can use lists.
 Here is a one-dimensional (1D) array, or a vector, for example.
@@ -137,6 +227,7 @@ print(type(a))
 ```
 
 Lists can even be used to create arrays with more dimensions.
+(Notice the similarity here between the `np.array()` argument and the use of lists as arrays shown above.)
 
 ```{python}
 a2 = np.array([[1, 2], 
@@ -158,7 +249,7 @@ print(a2.shape)
 print(a3.shape)
 ```
 
-Or, for just the number of dimensions,
+Or, for just the number of dimensions:
 
 ```{python}
 print(len(a3.shape))
@@ -178,9 +269,81 @@ z3 = np.zeros((2, 2, 2))
 print(z3)
 ```
 
-There is also a `ones()` function in NumPy.
+There is an analogous `ones()` function in NumPy as well.
 
-# 6. DataFrames
+Arrays support indexing (extraction and assignment) as well.
+
+```{python}
+ 
+a2 = np.array([[1, 2], 
+               [3, 4]])
+
+a2
+```
+
+Separate the indices for different dimensions with commas.
+
+```{python}
+a2[1, 1]
+```
+
+Assingment works too.
+
+```{python}
+a2[1, 1] = 0
+a2
+```
+
+And so does slicing, for both extraction and assignment.
+
+```{python}
+a2[0:2, 1] 
+```
+
+Omit the indices but leave the colon to get all elements in a particular dimension.
+
+```{python}
+a2[:, 1] 
+```
+
+```{python}
+a2[0, :] = [-10, -10] 
+a2
+```
+
+Arrays also support vectorized operations, which is very useful.
+So, for example, to multiple every element in `a2` by 10.
+
+```{python}
+a20 = 10 * a2
+a20
+```
+
+This might seem trivial, but it has not been the norm in programming languages, and does not work in lists, for example.
+
+```{python}
+3 * [1, 2, 3]
+```
+
+Instead, Python does what is called *sequence repetition*.
+
+# 6. Dictionaries
+
+Dictionaries are handy when data elements need some kind of label or name to go along with them, such as with model output.
+
+```{python}
+out = {
+  "model": "Diff1D",
+  "iterations": 3,
+  "fit": 0.9
+}
+
+out
+```
+
+Of course their utility is better when the values are linked to symbolic variables!
+
+# 7. DataFrames
 
 The pandas package provides a data structure suitable for *tabular* data called a data frame, or, in pandas parlance, a *DataFrame* (note the capitalization, but "pandas" itself is not capitalized).
 Unlike an array, a data frame can contain data of different types.
@@ -198,5 +361,53 @@ print(mm)
 These molar mass have data of type string in the first column, and floating point in the second.
 The `mm` DataFrame has *column names*, which can be used to refer to individual columns.
 
-The pandas package provides tools for processing complete DataFrames or individual columns.
+The pandas package provides tools for processing complete DataFrames or individual columns (Series in pandas terminology).
 And it contains features to maintain the connections between the columns, so, for example, the formula in the second row is always associated with the correct molar mass.
+
+We may use DataFrames for importing and exporting data, and possibly for some data processing.
+But in most cases, the other data types are simpler for our work.
+
+What if we want to work with a column of data?
+We can use either a dot `.` or the general Python and NumPy indexing operator square brackets `[ ]`, as shown above.
+
+```{python}
+print(mm.mol_mass)
+mm_vals = mm.mol_mass
+print(mm_vals)
+mm_vals = mm['mol_mass']
+print(mm_vals)
+```
+
+We can then work with the "extracted" values.
+But be careful!
+The class is Series, a special pandas class, not a simple array.
+Second, the `mm_vals` object is *still* part of the larger DataFrame.
+
+Typically, a better option is to extract the values with the `array` attribute.
+
+```{python}
+mm_vals2 = mm.mol_mass.array
+print(mm_vals2)
+```
+
+Now we can use these as any other array.
+
+```{python}
+print(min(mm_vals2))
+print(mm_vals2.mean())
+```
+
+(Which `mean()` method do you think are we using in the second line above?
+Remember that it depends on the class of the object.)
+
+Alternatively, the `to_numpy()` method may have some advantages.
+
+```{python}
+mm_vals3 = mm.mol_mass.to_numpy()
+print(mm_vals3)
+```
+
+Confused?
+It gets a bit worse, unfortunately: originally the pandas documentation recommended using the `.values` attribute to get the underlying values, but does no longer (see here for some explanation: <https://pandas.pydata.org/docs/user_guide/basics.html>).
+But you will still see `.values` in answers and more online.
+
