@@ -13,6 +13,7 @@ A few of these terms are used in Python as well.
 1. Analytical model
 1. Numerical model
 1. Box model
+1. Multi-compartment model
 1. Stagewise process
 1. Curve fitting
 1. Regression
