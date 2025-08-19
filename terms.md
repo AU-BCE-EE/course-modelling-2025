@@ -81,6 +81,7 @@ The following terms are important for mass or heat transfer.
 1. Latent heat
 1. Sensible heat
 1. Retention time
+1. Shell balance
 
 # Solution methods
 The following terms are important for how we solve models
