@@ -19,7 +19,7 @@ See below for some constants.
 
 | Parameter   | Value                                |
 |-----        |-----                                 |
-|$\text{K}_\text{H}$ | $10^{-1.5}$ mol kg$^{-1}$ atm$^{-1}$ |
+|$\text{K}_\text{H}$ | $10^{-1.5}$ mol $\text{kg}^{-1}$ $\text{atm}^{-1}$ |
 |$\text{K}_1$ | $10^{-6.3}$                          |
 |$\text{K}_2$ | $10^{-10.3}$                         |
 
