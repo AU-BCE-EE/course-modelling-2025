@@ -4,7 +4,7 @@ Carbon dioxide ($\text{CO}_2$) dissolves in water to form carbonic acid ($\text{
 
 ```
 $$
-\text{CO}_2 (aq) + \text{H}_2\text{O} \xrightleftharpoons
+\text{CO}_2 (aq) + \text{H}_2 \text{O} \xrightleftharpoons
 $$
 ```
 
