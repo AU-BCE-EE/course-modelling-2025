@@ -1,4 +1,4 @@
-# Exercise 1. Simple transport and microbial models
+# 1. Wood chip reactor
 
 1. A denitrifying wood chip bioreactor is just a trench in the ground filled with wood chips.
 Nitrate (NO₃⁻) in water draining from agricultural fields is removed by bacterial denitrification, with wood organic matter as the electron donor and carbon source.
