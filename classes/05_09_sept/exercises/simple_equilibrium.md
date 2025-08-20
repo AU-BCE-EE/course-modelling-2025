@@ -3,7 +3,7 @@
 Carbon dioxide ($\text{CO}_2$) dissolves in water to form carbonic acid ($\text{H}_2 \text{CO}3$), which can give up two hydrogen ions or protons ($\text{H}^+$).
 
 $$
-\text{CO}_2\ (aq) + \text{H}_2\text{O} \leftrightharpoons\ \text{H}_2\text{CO}_3*
+\text{CO}_2\ (aq) + \text{H}_2\text{O} \leftrightharpoons\ \text{H}_2\text{CO}_3^*
 $$
 
 $$
@@ -19,7 +19,7 @@ See below for some constants.
 
 | Parameter   | Value                                |
 |-----        |-----                                 |
-|$\text{K}_\text{H}$ | $10^{-1.5}$ mol $\text{kg}^{-1}$ $\text{atm}^{-1}$ |
+|$\text{K}_\text{H}$ | $10^{-1.5}$ $\text{mol}$ $\text{kg}^{-1}$ $\text{atm}^{-1}$ |
 |$\text{K}_1$ | $10^{-6.3}$                          |
 |$\text{K}_2$ | $10^{-10.3}$                         |
 
