@@ -19,9 +19,9 @@ See below for some constants.
 
 | Parameter   | Value                                |
 |-----        |-----                                 |
-|$\text{K_H}$ | $10^{-1.5}$ mol kg$^{-1}$ atm$^{-1}$ |
-|$\text{K_1}$ | $10^{-6.3}$                          |
-|$\text{K_2}$ | $10^{-10.3}$                         |
+|$\text{K}_\text{H}$ | $10^{-1.5}$ mol kg$^{-1}$ atm$^{-1}$ |
+|$\text{K}_1$ | $10^{-6.3}$                          |
+|$\text{K}_2$ | $10^{-10.3}$                         |
 
 B. The concentration of $\text{CO}_2$ has increased from below 300 ppm$_v$ before the industrial revolution to above 400 ppm$_v$ presently. Using Python, create a plot of equilibrium pH vs. $\text{CO}_2$ mixing ratio.
 
