@@ -22,7 +22,7 @@ We expect that a typical class will be run something like this:
 
 |                                  |  Duration (min.)   | Total (min.)|
 |--------------                    |-----------         |------------ |
-| Discuss assignment or warm up    | 15                 |   15        |
+| Discuss exercise or warm up    | 15                 |   15        |
 | Lecture                          | 30                 |   45        |
 | Break                            |  5                 |   50        |
 | Lecture                          | 20                 |   70        |
