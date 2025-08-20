@@ -17,10 +17,11 @@ $$
 A. Can you develop a simple equilibrium model with pencil and paper to predict the pH of otherwise pure water in equilibrium with atmospheric $\text{CO}_2$?
 See below for some constants.
 
+| Parameter   | Value                                |
 |-----        |-----                                 |
 |$\text{K_H}$ | $10^{-1.5}$ mol kg$^{-1}$ atm$^{-1}$ |
 |$\text{K_1}$ | $10^{-6.3}$                          |
-|$\text{K_2}$ | $10^{-10.3}$                          |
+|$\text{K_2}$ | $10^{-10.3}$                         |
 
 B. The concentration of $\text{CO}_2$ has increased from below 300 ppm$_v$ before the industrial revolution to above 400 ppm$_v$ presently. Using Python, create a plot of equilibrium pH vs. $\text{CO}_2$ mixing ratio.
 
