@@ -84,7 +84,7 @@ The following terms are important for mass or heat transfer.
 1. Shell balance
 
 # Solution methods
-The following terms are important for how we solve models
+The following terms are important for how we solve models.
 
 1. Discretization
 1. Method of lines
@@ -104,3 +104,11 @@ The following terms are important for how we solve models
 1. Ghost point
 1. Symmetry
 1. Initial condition
+
+# Reaction terms
+
+1. Stoichiometry
+2. First-order
+3. Second-order
+4. Equilibrium constant
+5. Reaction quotient
