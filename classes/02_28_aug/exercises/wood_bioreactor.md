@@ -12,3 +12,7 @@ Here are some questions to think about:
 * What simplifications are you making?
 * What (if anything) could the final model be used for?
 
+
+<img width="750" height="500" alt="image" src="https://github.com/user-attachments/assets/280e5abf-de76-4582-a618-3d61d135df8e" />
+<https://www.agriculture.com/crops/conservation/woodchip-bioreactors-are-at-the-forefront-of-conservation-technology>
+
