@@ -8,6 +8,8 @@ A few of these terms are used in Python as well.
 1. Parameter
 1. Parameter estimation
 1. Empirical model
+1. Constitutive relation
+1. Governing equation
 1. Deterministic model
 1. Mechanistic model
 1. Analytical model
