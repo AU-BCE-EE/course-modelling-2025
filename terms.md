@@ -30,6 +30,8 @@ A few of these terms are used in Python as well.
 1. Rate
 1. Conservation equation
 1. Mass balance
+1. Constitutive equation
+1. Linking equation
 1. Parameterization
 1. Computer program
 1. Model
