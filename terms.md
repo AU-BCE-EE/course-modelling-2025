@@ -102,6 +102,7 @@ The following terms are important for how we solve models.
 1. Explicit
 1. Implicit
 1. Coordinates
+1. Boundary conditions
 1. Dirichlet boundary
 1. Neumann boundary
 1. Robin boundary
