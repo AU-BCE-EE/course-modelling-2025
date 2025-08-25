@@ -12,10 +12,10 @@ The course instructors:
 # Repo contents
 
 * Course information: [course_info.md](https://github.com/AU-BCE-EE/course-modelling-2025/blob/main/course_info.md)
-* Class schedule : [schedule.csv](https://github.com/AU-BCE-EE/course-modelling-2025/blob/main/schedule.csv)
-* Warm-up problems : [warm_up.md](https://github.com/AU-BCE-EE/course-modelling-2025/blob/main/warm_up.md)
-* Documents on Python and other topics : [docs](https://github.com/AU-BCE-EE/course-modelling-2025/tree/main/docs)
-* Data for assignments or demos : [data](https://github.com/AU-BCE-EE/course-modelling-2025/tree/main/data)
+* Class schedule: [schedule.csv](https://github.com/AU-BCE-EE/course-modelling-2025/blob/main/schedule.csv)
+* Warm-up problems: [warm_up.md](https://github.com/AU-BCE-EE/course-modelling-2025/blob/main/warm_up.md)
+* Documents on Python and other topics: [docs](https://github.com/AU-BCE-EE/course-modelling-2025/tree/main/docs)
+* Data for assignments or demos: [data](https://github.com/AU-BCE-EE/course-modelling-2025/tree/main/data)
 
 # Repo usage
 Most of the repo content is meant to be viewed online.
