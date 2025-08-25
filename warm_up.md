@@ -1,6 +1,6 @@
 # Warm-up problems for class
 
-1. Estimate that rate of heat released by the people in this room in kW. 
+1. Estimate that rate of heat released by the people in this room in W. 
 1. Goats walk around with very large abdomens while mountain lions, in contrast, do not. Can you propose a reason and support it with some quantitative estimates?
 1. Estimate the original carbohydrate concentration needed to make beer with 5% alcohol. Note that the 5% refers to content by volume, which is equivalent to about 4% by mass.
 1. Assuming a forest somewhere in Denmark has a net primary productivity of 5 Mg ha¹ yr⁻¹ on a carbon (C) basis, estimate the net efficiency of solar energy capture.
