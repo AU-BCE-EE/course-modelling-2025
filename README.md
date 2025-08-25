@@ -17,6 +17,10 @@ The course instructors:
 * Documents on Python and other topics: [docs](https://github.com/AU-BCE-EE/course-modelling-2025/tree/main/docs)
 * Data for assignments or demos: [data](https://github.com/AU-BCE-EE/course-modelling-2025/tree/main/data)
 
+# Brightspace
+We will use the course Brightspace page for announcements and for sharing reading materials.
+You can find reading materials on Brightspace under [Content -> Reading material](https://brightspace.au.dk/d2l/le/lessons/184142/units/2412028).
+
 # Repo usage
 Most of the repo content is meant to be viewed online.
 Just click the file name or relevant link to view a GitHub rendering of each file.

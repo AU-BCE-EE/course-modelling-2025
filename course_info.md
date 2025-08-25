@@ -98,7 +98,10 @@ Our course text is:
 
 Rasmuson, A. et al. 2014. Mathematical Modeling in Chemical Engineering. Cambridge University Press. 183 pp.
 
-We will provide copies of other reading material when assigned.
+You can find reading materials on Brightspace under [Content -> Reading material](https://brightspace.au.dk/d2l/le/lessons/184142/units/2412028).
+
+# Brightspace
+We will use the course Brightspace page for announcements and for sharing reading materials.
 
 # Git and GitHub
 Git and GitHub are software tools for tracking changes to files and collaborating in writing computer code.
