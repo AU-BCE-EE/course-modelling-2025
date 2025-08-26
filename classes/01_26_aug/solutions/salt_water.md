@@ -1,0 +1,35 @@
+
+
+A tank contains water and a small amount of salt. Saltwater is flowing
+into the tank at a constant rate of 2 L/min with a concentration of 0.5
+kg/L. The mixed solution flows out of the tank at the same rate. The
+tank is well-mixed, so the concentration of salt in the tank is uniform.
+Write a differential equation that describes the mass balance for the
+salt in the tank. Write it so we have: dC/dt = …
+
+What information is missing in order to also solve the differential
+equation?
+
+Solution:
+
+The general mass balance for any system is: Accumulation = in - out +
+generated - consumed
+
+In terms of mass of salt: There is no generation or consumption of salt
+so:
+
+dM/dt = F_in \* C_in - F_out \* C
+
+we know that: dM/dt = V\* dC/dt
+
+V \* dC/dt = F_in \* C_in - F_out \* C
+
+Finally:
+
+dC/dt = (F_in \* C_in - F_out \* C)/V
+
+We have F_in = 2L/min and we have C_in = 0.5 kg/L. F_out is = F_in, but
+we still need the volume of the reactor (V) and we need to know the
+start concentration of the salt in the tank (C0). C0 would first appear
+when we are going to use a numerical solver or when we are going to
+solve the differential equation analytically.
