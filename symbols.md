@@ -5,7 +5,7 @@ Feel free to send other suggestions and to let us know of cases where we do not 
 Typical units are given for each symbol, and dimensions can be inferred from those.
 Words in parentheses are not always used when we describe the terms (e.g., we may say "specific heat" or "heat transfer coefficient").
 
-1. $A$ Cross-sectional area, typically $\text{m}^3$ 
+1. $A$ Cross-sectional area, typically $\text{m}^2$ 
 1. $Q$ Thermal energy, typically J
 1. $\dot Q$ Rate of thermal energy flow, typically $\text{J}~\text{s}^{-1} = \text{W}$
 1. $q$ Heat flux, typically $\text{W}~\text{m}^{-2}$
