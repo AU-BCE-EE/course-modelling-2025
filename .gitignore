@@ -4,6 +4,9 @@
 # All html files
 *_files/
 
+# Windows seems to make pdf autosave files
+*autosave*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
