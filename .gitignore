@@ -8,7 +8,7 @@
 *autosave*
 
 # And Windows/WSL copy issue makes this stupid file
-Zone.Identifier
+*Zone.Identifier*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
