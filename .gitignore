@@ -4,6 +4,12 @@
 # All html files
 *_files/
 
+# Windows seems to make pdf autosave files
+*autosave*
+
+# And Windows/WSL copy issue makes this stupid file
+*Zone.Identifier*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
