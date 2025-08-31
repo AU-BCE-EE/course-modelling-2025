@@ -10,6 +10,9 @@
 # And Windows/WSL copy issue makes this stupid file
 *Zone.Identifier*
 
+# Argh
+*.Rhistory
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
