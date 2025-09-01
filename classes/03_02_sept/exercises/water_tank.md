@@ -21,7 +21,7 @@ And here are some hints that correspond to the steps above.
 2. Most of the typical terms in the water mass or volume balance equation are zero.
 3. There is one, very simple, empirical constitutive equation.
 4. No linkage equation is needed.
-5. Spatial? No need to think about it.
+5. Spatial? We definitely do not need a spatial model (1D, 2D, ...) here.
 6. You know the initial water volume.
 7. Combine the balance and constitutive equation to get a governing equation--an ODE for the rate of change in water volume.
 8. And then integrate it analytically.
