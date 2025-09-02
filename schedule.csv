@@ -2,8 +2,8 @@ Date,Location,Class,Course Week,Year week,Day,Time,Teacher,Reading,Topic
 26-08-2025,1170-347,1,1,35,Tuesday,12:00-14:00,Frederik ,Rasmuson Chapters 1 & 2,"Introduction to course, purpose of models, model classification, the modelling procedure"
 28-08-2025,5220-318,2,1,35,Thursday,08:00:10:00,Sasha,Rasmuson Chapter 3,Model formulation
 02-09-2025,1170-347,3,2,36,Tuesday,12:00-14:00,Sasha,"Incropera Sections 1.1-1.2, py_data.md",Heat transfer and Python review
-04-09-2025,5220-318,4,2,36,Thursday,08:00:10:00,Sasha,Cussler Chapter 1,Mass transfer and finite difference method
-09-09-2025,1170-347,5,3,37,Tuesday,12:00-14:00,Sasha,"Rittmann Chapter 3, Odum Chapter 12","Stoichiometry: chemistry, biology, ecology"
+04-09-2025,5220-318,4,2,36,Thursday,08:00:10:00,Sasha,Cussler pp 1-3,Mass transfer and finite difference method
+09-09-2025,1170-347,5,3,37,Tuesday,12:00-14:00,Sasha,"Rittmann Chapter 3 through 3.1","Stoichiometry: chemistry, biology, ecology"
 11-09-2025,5220-318,6,3,37,Thursday,08:00:10:00,Frederik ,,Mini-project
 16-09-2025,1170-347,7,4,38,Tuesday,12:00-14:00,Frederik ,,Mini-project
 18-09-2025,5220-318,8,4,38,Thursday,08:00:10:00,Frederik ,"Edsberg notes, Python book chap 20/Snape p 219",PDEs and MOL 1D directlet
