@@ -1,4 +1,4 @@
-# Oxygen diffusion through gills
+# Oxygen transport through gills
 
 Fish transport dissolved oxygen from water into their bloodstream through gills.
 Early work on the topic suggests that most of the resistance for this transport comes from a water film outside the gills. 
