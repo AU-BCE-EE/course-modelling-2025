@@ -9,6 +9,7 @@ Words in parentheses are not always used when we describe the terms (e.g., we ma
 1. $Q$ Thermal energy, typically J
 1. $\dot Q$ Rate of thermal energy flow, typically $\text{J}~\text{s}^{-1} = \text{W}$
 1. $q$ Heat flux, typically $\text{W}~\text{m}^{-2}$
+1. $\dot m$ Rate of mass flow, typically $\text{kg}~\text{s}^{-1}$
 1. $J$ Mass flux, typically $\text{kg}~\text{s}^{1}\text{m}^{-2}$
 1. $c_p$ Specific heat (capacity), typically $\text{kJ}~\text{kg}^{-1}\text{K}^{-1}$
 1. $h$ (Convection) heat transfer coefficient, typically $\text{W} ~ \text{m}^{-2} ~ \text{K}^{-1}$
