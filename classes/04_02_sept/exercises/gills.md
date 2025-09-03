@@ -7,7 +7,7 @@ You can assume a diffusivity of 2 x 10⁻⁹ m⁻² s⁻¹.
 
 So, first, what is the smaller corresponding mass transfer coefficient value for these conditions?
 
-Second, how fast can oxygen diffuse in for these two scenarios?
+Second, how fast can oxygen move into the blood in for these two scenarios?
 Bulk oxygen concentration depends on temperature and consumption rate, but you may assume it is 10 mg L⁻¹, which might be the case for cool, clean water.
 In the blood, free oxygen rapidly reacts with hemoglobin, so you can assume the dissolved oxygen concentration is zero.
 
