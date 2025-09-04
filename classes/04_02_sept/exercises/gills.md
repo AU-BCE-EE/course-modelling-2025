@@ -3,7 +3,7 @@
 Fish transport dissolved oxygen from water into their bloodstream through gills.
 Early work on the topic suggests that most of the resistance for this transport comes from a water film outside the gills. 
 An increase in water flow over gills might reduce effective film thickness from 50 down to 20 μm.
-You can assume a diffusivity of 2 x 10⁻⁹ m⁻² s⁻¹.
+You can assume a diffusivity of 2 x 10⁻⁹ m² s⁻¹.
 
 So, first, what is the smaller corresponding mass transfer coefficient value for these conditions?
 
