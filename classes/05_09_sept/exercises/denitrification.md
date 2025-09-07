@@ -1,3 +1,0 @@
-# Denitrification reactor
-
-In a  
