@@ -24,5 +24,6 @@ See below for some constants.
 |$\text{K}_2$ | $10^{-10.3}$                         |
 
 
-B. The concentration of $\text{CO}_2$ has increased from below 300 ppm$_v$ before the industrial revolution to above 400 ppm$_v$ presently. Using Python, create a plot of equilibrium pH vs. $\text{CO}_2$ mixing ratio.
+B. The concentration of $\text{CO}_2$ has increased from below 300 $\text{ppm}_v$ before the industrial revolution to above 400 $\text{ppm}_v$ presently. 
+Using Python, create a plot of equilibrium pH vs. $\text{CO}_2$ mixing ratio.
 
