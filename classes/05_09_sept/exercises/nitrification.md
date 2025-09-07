@@ -4,7 +4,7 @@ In a nitrifying reactor ammonia is oxidized with oxygen to nitrate.
 A representive reaction is given below.
 
 $$
-0.13\text{NH}_4^+ + 0.225\text{O}_2 + 0.02\text{CO}_2 + 0.005\text{HCO}_3^- \rightarrow 0.005\text{C}_5 \text{H}_7 \text{O}_2 \text{N} + 0.125\text{NO}_3^- + 0.25\text{H}^+ + 0.12{H}_2\text{O}
+0.13\text{NH}_4^+ + 0.225\text{O}_2 + 0.02\text{CO}_2 + 0.005\text{HCO}_3^- \rightarrow 0.005\text{C}_5 \text{H}_7 \text{O}_2 \text{N} + 0.125\text{NO}_3^- + 0.25\text{H}^+ + 0.12\text{H}_2\text{O}
 $$
 
 The first product listed represents nitrifier cell biomass.
