@@ -1,5 +1,7 @@
 # Nitrifying reactor
 
+You do not need to develop a complete model in this exerise, but will instead explore how stoichiometry can be used to help develop material balance and constitutive equations.
+
 In a nitrifying reactor ammonia is oxidized with oxygen to nitrate.
 A representive reaction is given below.
 
@@ -9,13 +11,13 @@ $$
 
 The first product listed represents nitrifier cell biomass.
 
-You do not need to develop a complete model in this exerise.
-Instead, first come up with a mass balance equation for nitrogen in a nitrifying reactor.
-Remember that nitrogen is present in multiple chemical species.
+A. Come up with mass balance equations for the different nitrogen-containing species in a nitrifying reactor.
 These all need to be considered.
 
-Second, write an appropriate constitutive equation for ammonia consumption using the Monod model.
+B. Write an appropriate constitutive equation for ammonia consumption using the Monod model.
 
-And third, use the stoichiometric coefficients above to write constitutive equations for nitrate and any other state variables that you might include in a nitrifying reactor model.
+C. Use the stoichiometric coefficients from the reaction above to write constitutive equations for nitrate and any other state variables that you might include in a nitrifying reactor model.
+
+D. Write governing equations for each of the three nitrogen-containing species.
 
 

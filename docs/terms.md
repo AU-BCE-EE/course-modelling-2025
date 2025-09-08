@@ -8,7 +8,6 @@ A few of these terms are used in Python as well.
 1. Parameter
 1. Parameter estimation
 1. Empirical model
-1. Constitutive relation
 1. Governing equation
 1. Deterministic model
 1. Mechanistic model
@@ -30,9 +29,8 @@ A few of these terms are used in Python as well.
 1. Rate
 1. Conservation equation
 1. Mass balance
-1. Constitutive equation
-1. Linking equation
-1. Parameterization
+1. Constitutive equation (relation)
+1. Linking (linkage) equation
 1. Computer program
 1. Model
 1. Conceptual model
@@ -80,7 +78,7 @@ The following terms are important for mass or heat transfer.
 1. Transport mechanism
 1. Thermal conductivity
 1. Specific heat capacity
-1. Heat transfer coefficient
+1. (Convection) heat transfer coefficient
 1. Mass transfer coefficient
 1. Latent heat
 1. Sensible heat

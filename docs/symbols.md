@@ -9,8 +9,6 @@ Words in parentheses are not always used when we describe the terms (e.g., we ma
 1. $Q$ Thermal energy, typically J
 1. $\dot Q$ Rate of thermal energy flow, typically $\text{J}~\text{s}^{-1} = \text{W}$
 1. $q$ Heat flux, typically $\text{W}~\text{m}^{-2}$
-1. $\dot m$ Rate of mass flow, typically $\text{kg}~\text{s}^{-1}$
-1. $J$ Mass flux, typically $\text{kg}~\text{s}^{1}\text{m}^{-2}$
 1. $c_p$ Specific heat (capacity), typically $\text{kJ}~\text{kg}^{-1}\text{K}^{-1}$
 1. $h$ (Convection) heat transfer coefficient, typically $\text{W} ~ \text{m}^{-2} ~ \text{K}^{-1}$
 1. $D$ Diffusivity, typically $\text{m}^2 ~ \text{s}^{-1}$
@@ -24,3 +22,10 @@ Words in parentheses are not always used when we describe the terms (e.g., we ma
 1. $c$ Concentration of a solute, chemical species, etc., typically $\text{g} ~ \text{m}^{-3}$
 1. $c$ Arbitrary constant, units vary 
 1. $m$ Mass of something, typically $\text{g}$
+1. $\dot m$ Mass flow or conversion rate, typically $\text{kg}~\text{s}^{-1}$
+1. $J$ Mass flux, typically $\text{kg}~\text{s}^{1}\text{m}^{-2}$
+1. $n$ Molar quantity of something, $\text{mol}$
+1. $\dot n$ Molar flow or conversion rate, typically $\text{mol}~\text{s}^{-1}$
+1. $M$ Molar mass of some chemical (identity indicated by subscript), $\text{g}~\text{mol}^{-1}$
+1. $r$ Volumetric molar flow or conversion rate, $\text{mol}~\text{m}^{-3}~\text{s}^{-1}$
+
