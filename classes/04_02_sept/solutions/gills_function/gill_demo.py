@@ -17,7 +17,7 @@ from importlib import reload
 # Import the gill_mod module, defined by a script in the working directory
 import gill_mod as gm
 # Reload as needed during function development
-#reload(gm)
+reload(gm)
 
 # Generate a list of kc values (m/s)
 kc = [1.e-4, 4.e-5] 

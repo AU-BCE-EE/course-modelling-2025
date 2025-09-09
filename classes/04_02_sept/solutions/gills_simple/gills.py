@@ -2,6 +2,7 @@
 File: gills.py
 Author: Sasha D. Hafner
 Course: Modelling 2025
+
 Description:
     Some calculations on oxygen transfer flux through fish gills, based
     on a simple mass transfer coefficient approach.
