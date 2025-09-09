@@ -14,4 +14,5 @@ Implement both approaches in Python.
 Compare the two.
 
 Now go back to the mass balance step of model formulation and assume you have a fixed rate of oxygen consumption in the tank.
-How do your models change?
+How does your governing equation change?
+Instead of trying to solve that new equation to develop a dynamic model, can you come up with a steady state solution?
