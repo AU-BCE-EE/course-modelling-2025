@@ -1,7 +1,7 @@
 # Aeration
 
 Water can be aerated (or more accurately, oxygenated) by introducing a continuous flow of air bubbles at the bottom of a tank or other vessel.
-Mass transfer rate depends on the mass transfer coefficient $k_L$ ($\text{m} \text{s}^{-1}$) and the bubble area $A$ ($\text{m}^2$) which is typically expressed on a volumetric basis as $a$ (so $\text{m}^2 \text{m}^{-3}$).
+Mass transfer rate depends on the mass transfer coefficient $k_L$ ($\text{m}~\text{s}^{-1}$) and the bubble area $A$ ($\text{m}^2$) which is typically expressed on a volumetric basis as $a$ (so $\text{m}^2 \text{m}^{-3}$).
 These two are typically combined into a single, observable, parameter called $k_La$ ($\text{s}^{-1}$ or actually commonly $\text{h}^{-1}$).
 
 A wastewater treatment tank is aerated in this way and the $k_La$ is around 20 $\text{h}^{-1}$.
