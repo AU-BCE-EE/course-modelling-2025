@@ -1,4 +1,4 @@
-# Mini-project I. Swimming pool heating
+# Mini-project I. Swimming pool heat loss
 
 ## Introduction
 Outdoor swimming pools are often heated to make the water more comfortable for swimming during cool weather.
