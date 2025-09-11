@@ -1,4 +1,4 @@
-# Mini-project I. Animal slurry tank model
+# Mini-project I. Nitrogen loss from manure tank
 
 ## Introduction
 
