@@ -6,7 +6,7 @@ Date,Location,Class,Course Week,Year week,Day,Time,Teacher,Reading,Topic
 09-09-2025,1170-347,5,3,37,Tuesday,12:00-14:00,Sasha,Rittmann Chapter 2 through 2.1 & Chapter 3 through 3.1,Interphase mass transfer
 11-09-2025,5220-318,6,3,37,Thursday,08:00:10:00,Frederik ,Review mass and heat transfer theory from previous classes,Mini-project
 16-09-2025,1170-347,7,4,38,Tuesday,12:00-14:00,Frederik ,Review mass and heat transfer theory from previous classes,Mini-project
-18-09-2025,5220-318,8,4,38,Thursday,08:00:10:00,Frederik ,"Edsberg notes, Python book chap 20/Snape p 219",PDEs and MOL 1D directlet
+18-09-2025,5220-318,8,4,38,Thursday,08:00:10:00,Frederik ,https://www.youtube.com/watch?v=ly4S0oi3Yz8&t=807s , https://www.youtube.com/results?search_query=https%3A%2F%2Fyoutu.be%2FxPElueguZnU, intro to PDEs and Method of lines
 23-09-2025,5344-101,9,5,39,Tuesday,12:00-14:00,Frederik ,Incropera BCs/Edsberg notes,Neumann/robin 1D and 2D
 25-09-2025,5220-318,10,5,39,Thursday,08:00:10:00,Frederik ,Edsberg notes,Stability of ODEs
 30-09-2025,1170-347,11,6,40,Tuesday,12:00-14:00,Frederik ,,Coupling mass balance and temp dependent reaction dynamics
@@ -30,3 +30,4 @@ Date,Location,Class,Course Week,Year week,Day,Time,Teacher,Reading,Topic
 02-12-2025,5344-101,27,14,49,Tuesday,12:00-14:00,Frederik ,,Evaluation + Model project report
 04-12-2025,5220-318,28,14,49,Thursday,08:00:10:00,Frederik ,,Evaluation + Model project report
 ,,,,,,,,,
+
