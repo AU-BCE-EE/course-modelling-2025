@@ -36,11 +36,11 @@ c0 = np.zeros(len(x_grid))
 c0[0] = 10
 
 tmax = 1000 # s
-sol = solve_ivp(rates, t_span = [0, tmax], y0 = c0, method = 'RK45',
+sol = solve_ivp(rates, t_span = [0, tmax], y0 = c0, method = 'LSODA',
                 t_eval = np.linspace(0, tmax, 50),
                 args = (dx, x_grid))
       
-for i in range(0, 100, 10):
+for i in range(0, len(x_grid)-1, int((len(x_grid)-1)/5)):
     plt.plot(sol.t, sol.y[i], label = i)
 plt.legend(loc = 1)
 plt.ylabel('concentration, mg/m3')
