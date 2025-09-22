@@ -27,5 +27,5 @@ Words in parentheses are not always used when we describe the terms (e.g., we ma
 1. $n$ Molar quantity of something, $\text{mol}$
 1. $\dot n$ Molar flow or conversion rate, typically $\text{mol}~\text{s}^{-1}$
 1. $M$ Molar mass of some chemical (identity indicated by subscript), $\text{g}~\text{mol}^{-1}$
-1. $r$ Volumetric molar flow or conversion rate, $\text{mol}~\text{m}^{-3}~\text{s}^{-1}$
+1. $r$ Volumetric molar flow or conversion rate, $\text{mol} ~ \text{m}^{-3} ~ \text{s}^{-1}$
 
