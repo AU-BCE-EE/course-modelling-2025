@@ -21,7 +21,7 @@ Words in parentheses are not always used when we describe the terms (e.g., we ma
 1. $x$ Position in 1D, typically $\text{m}$
 1. $c$ Concentration of a solute, chemical species, etc., typically $\text{g} ~ \text{m}^{-3}$
 1. $c$ Arbitrary constant, units vary 
-1. $m$ Mass of something, typically $\text{g}$
+1. $m$ Mass of something, typically $\text{kg}$
 1. $\dot m$ Mass flow or conversion rate, typically $\text{kg}~\text{s}^{-1}$
 1. $J$ Mass flux, typically $\text{kg}~\text{s}^{1}\text{m}^{-2}$
 1. $n$ Molar quantity of something, $\text{mol}$
