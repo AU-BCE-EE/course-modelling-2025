@@ -34,7 +34,45 @@ def dynmod(a_top,
            cp = 4180,
            dens = 1000
            ):  
-    
+
+    """ 
+    Dynamic model for heat loss from an outdoor swimming pool. 
+
+    Parameters
+    ----------
+    a_top : float
+       Area of pool water surface at the top (m2) 
+    a_wall : float
+        Wall and floor area in contact with soil or substrate (m2)
+    depth : float
+        Pool depth (m)
+    q_sol : float
+        Global solar radiation flux (W/m2)
+    u_top : float
+        Overall heat transfer coefficient from the upper water surface (W/m2-K)
+    u_wall : float
+        Overall heat transfer coefficient for the walls and floor from water to substrate (W/m2-K)
+    temp_air : float
+        Constant air temperature (degree C)
+    temp_sub : float
+        Constant substrate temperature (degree C)
+    flow_renew : float
+        Flow rate of water cycling through pool (m3/s)
+    temp_renew : float
+        Temperature of heated water added to pool at rate of flow_renew (deg. C)
+    temp_init : float
+        Initial pool temperature (deg. C)
+    t_range : tuple, list, or array (length 2)
+        Time limits for simulation (s)
+    t_step : float
+        Time step for output (s)
+    cp : float 
+        Specific heat capacity of water (J/kg-K) 
+    dens : float
+        Density of water (kg/m3)
+ 
+    """
+     
     # Define rates function
     def rates(t, temp_pool):
 
@@ -82,7 +120,41 @@ def ssmod(a_top,
           cp = 4180,
           dens = 1000
           ):  
+
+    """ 
+    Steady-state model for heat loss from an outdoor swimming pool. 
+
+    Parameters
+    ----------
+    a_top : float
+       Area of pool water surface at the top (m2) 
+    a_wall : float
+        Wall and floor area in contact with soil or substrate (m2)
+    depth : float
+        Pool depth (m)
+    q_sol : float
+        Global solar radiation flux (W/m2)
+    u_top : float
+        Overall heat transfer coefficient from the upper water surface (W/m2-K)
+    u_wall : float
+        Overall heat transfer coefficient for the walls and floor from water to substrate (W/m2-K)
+    temp_air : float
+        Constant air temperature (degree C)
+    temp_sub : float
+        Constant substrate temperature (degree C)
+    flow_renew : float
+        Flow rate of water cycling through pool (m3/s)
+    temp_renew : float
+        Temperature of heated water added to pool at rate of flow_renew (deg. C)
+    temp_init : float
+        Initial pool temperature (deg. C)
+    cp : float 
+        Specific heat capacity of water (J/kg-K) 
+    dens : float
+        Density of water (kg/m3)
  
+    """
+  
     vol = a_top * depth
 
     K = (a_top * u_top + 
