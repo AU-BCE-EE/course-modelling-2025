@@ -5,7 +5,7 @@
 *.html
 
 # All html files
-*_files/
+#*_files/
 
 # Windows seems to make pdf autosave files
 *autosave*
