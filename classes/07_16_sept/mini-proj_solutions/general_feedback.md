@@ -7,6 +7,7 @@ So, in general, nice work!
 There are still things to improve for next time.
 But first, the good things.
 It was clear that you used the model formulation process we studied in class.
+Sketches were quite good!
 Most reports clearly stated that a lumped parameter approach was used.
 Most of you recognized and explained that the models included other important simplifications.
 Most of you used numerical solutions and did so correctly.
