@@ -3,6 +3,7 @@
 ## Overview 
 Almost every group developed a logical and reasonable model, within the limits that come with trying to describe a complex system with a simple model and considering the challenge of presenting everything in no more than 5 pages!
 And we did not give you much time either.
+So, in general, nice work!
 There are still things to improve for next time.
 But first, the good things.
 It was clear that you used the model formulation process we studied in class.
