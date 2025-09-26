@@ -6,36 +6,36 @@ Date,Location,Class,Course Week,Year week,Day,Time,Teacher,Reading,Topic
 09-09-2025,1170-347,5,3,37,Tuesday,12:00-14:00,Sasha,Rittmann Chapter 2 through 2.1 & Chapter 3 through 3.1,Interphase mass transfer
 11-09-2025,5220-318,6,3,37,Thursday,08:00:10:00,Frederik,Review mass and heat transfer theory from previous classes,Mini-project
 16-09-2025,1170-347,7,4,38,Tuesday,12:00-14:00,Frederik,Review mass and heat transfer theory from previous classes,Mini-project
-18-09-2025,5220-318,8,4,38,Thursday,08:00:10:00,Frederik,https://www.youtube.com/watch?v=ly4S0oi3Yz8&t=807s and https://www.youtube.com/results?search_query=https%3A%2F%2Fyoutu.be%2FxPElueguZnU, intro to PDEs and Method of lines (remember implemented code from home!)
-23-09-2025,5344-101,9,5,39,Tuesday,12:00-14:00,Frederik,Edsberg_BCs p 119 and video https://youtu.be/p-tKwzYB2lw, boundary conditions for PDEs
-25-09-2025,5220-318,10,5,39,Thursday,08:00:10:00,Frederik,Effect of dx video https://youtu.be/KAYrrKweVEo, Continue exercises on 1D models and BCs
-30-09-2025,1170-347,11,6,40,Tuesday,12:00-14:00,Frederik,presentation of problem solutions by students, review of exercises presentations
-02-10-2025,5220-318,12,6,40,Thursday,08:00:10:00,Frederik, ,2D model with mass and reaction (reaction temp dependent and or biological reaction) 
-07-10-2025,5344-101,13,7,41,Tuesday,12:00-14:00,Frederik,Edsberg_stability, stablity of ODEs
-09-10-2025,5220-318,14,7,41,Thursday,08:00:10:00,Frederik,Edsberg_stability, stablity of ODEs
+18-09-2025,5220-318,8,4,38,Thursday,08:00:10:00,Frederik,https://www.youtube.com/watch?v=ly4S0oi3Yz8&t=807s and https://www.youtube.com/results?search_query=https%3A%2F%2Fyoutu.be%2FxPElueguZnU,Intro to PDEs and Method of lines (remember implemented code from home!)
+23-09-2025,5344-101,9,5,39,Tuesday,12:00-14:00,Frederik,Edsberg_BCs p 119 and video https://youtu.be/p-tKwzYB2lw,Boundary conditions for PDEs
+25-09-2025,5220-318,10,5,39,Thursday,08:00:10:00,Frederik,Effect of dx video https://youtu.be/KAYrrKweVEo,Continue exercises on 1D models and BCs
+30-09-2025,1170-347,11,6,40,Tuesday,12:00-14:00,Frederik,presentation of problem solutions by students,Review of exercises presentations
+02-10-2025,5220-318,12,6,40,Thursday,08:00:10:00,Frederik, ,2D model with mass and reaction
+07-10-2025,5344-101,13,7,41,Tuesday,12:00-14:00,Frederik,Edsberg_stability,Stability of ODEs
+09-10-2025,5220-318,14,7,41,Thursday,08:00:10:00,Frederik,Edsberg_stability,Stability of ODEs
 14-10-2025,,,BREAK,42,Tuesday,,,,
 16-10-2025,,,BREAK,42,Thursday,,,,
-21-10-2025,5344-101,15,8,43,Tuesday,12:00-14:00,Sasha,,Parameter estimation
-23-10-2025,5220-318,16,8,43,Thursday,08:00:10:00,Sasha,,Parameter estimation
-28-10-2025,5344-101,17,9,44,Tuesday,12:00-14:00,Sasha,,Model complexity and simplification
-30-10-2025,5220-318,18,9,44,Thursday,08:00:10:00,Sasha,,Model complexity and simplification
+21-10-2025,5344-101,15,8,43,Tuesday,12:00-14:00,Sasha,,Model evaluation and validation
+23-10-2025,5220-318,16,8,43,Thursday,08:00:10:00,Sasha,,Model evaluation and validation
+28-10-2025,5344-101,17,9,44,Tuesday,12:00-14:00,Sasha,,Parameter estimation
+30-10-2025,5220-318,18,9,44,Thursday,08:00:10:00,Sasha,,Parameter estimation
 04-11-2025,5344-101,19,10,45,Tuesday,12:00-14:00,Frederik ,,Mini-project
 06-11-2025,5220-318,20,10,45,Thursday,08:00:10:00,Frederik ,,Mini-project
-11-11-2025,5344-101,21,11,46,Tuesday,12:00-14:00,Frederik ,,Model evaluation and validation
-13-11-2025,5220-318,22,11,46,Thursday,08:00:10:00,Frederik ,,Model evaluation and validation
-18-11-2025,5344-101,23,12,47,Tuesday,12:00-14:00,Frederik ,,Buffer
-20-11-2025,5220-318,24,12,47,Thursday,08:00:10:00,Frederik ,,Buffer
-25-11-2025,5344-101,25,13,48,Tuesday,12:00-14:00,Frederik ,,Project
-27-11-2025,5220-318,26,13,48,Thursday,08:00:10:00,Frederik ,,Project
-02-12-2025,5344-101,27,14,49,Tuesday,12:00-14:00,Frederik ,,Evaluation + Model project report
-04-12-2025,5220-318,28,14,49,Thursday,08:00:10:00,Frederik ,,Evaluation + Model project report
+11-11-2025,5344-101,21,11,46,Tuesday,12:00-14:00,Frederik ,,Mini-project
+13-11-2025,5220-318,22,11,46,Thursday,08:00:10:00,Frederik ,,Model simplification (video & exercise) (mini-project due)
+18-11-2025,5344-101,23,12,47,Tuesday,12:00-14:00,Frederik ,,"Combined mass, heat, reaction"
+20-11-2025,5220-318,24,12,47,Thursday,08:00:10:00,Frederik ,,"Combined mass, heat, reaction"
+25-11-2025,5344-101,25,13,48,Tuesday,12:00-14:00,Frederik ,,Time-variable inputs (video & exercises)
+27-11-2025,5220-318,26,13,48,Thursday,08:00:10:00,Frederik ,,Time-variable inputs (video & exercises)
+02-12-2025,5344-101,27,14,49,Tuesday,12:00-14:00,Frederik ,,"Evaluation, exam project presentation, review"
+04-12-2025,5220-318,28,14,49,Thursday,08:00:10:00,Frederik ,,Project
 ,,,,,,,,,
-
-
-
-
-
-
-
-
-
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
