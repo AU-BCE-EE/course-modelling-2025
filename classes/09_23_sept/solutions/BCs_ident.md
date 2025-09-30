@@ -394,9 +394,9 @@ f'The velocity needs to be {solution} m/min in order to achieve a concentration 
 
 ![](BCs_ident_files/figure-commonmark/cell-5-output-1.png)
 
-    C:\Users\au277187\AppData\Local\Temp\ipykernel_10400\3912035505.py:40: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+    C:\Users\au277187\AppData\Local\Temp\ipykernel_15352\3912035505.py:40: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
       dcdt[N] = -v*(c[N] - c[N-1])/dx + D * (c[N-1] -2*c[N] + c[N-1])/dx**2 - k * c[N]
-    C:\Users\au277187\AppData\Local\Temp\ipykernel_10400\3912035505.py:44: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+    C:\Users\au277187\AppData\Local\Temp\ipykernel_15352\3912035505.py:44: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
       dcdt[i] = -v*(c[i] - c[i-1])/dx + D * (c[i-1] -2*c[i] + c[i+1])/dx**2 - k * c[i]
 
     'The velocity needs to be [0.00375978] m/min in order to achieve a concentration of 5% of the inlet concentration'
@@ -595,3 +595,7 @@ plt.show()
 ```
 
 ![](BCs_ident_files/figure-commonmark/cell-7-output-1.png)
+
+It looks like all bacteria are eventually washed out of the pipe and
+therefore the acetate will not be consumed after some time. BUT this may
+be different at lower flow velocities.
