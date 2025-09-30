@@ -10,7 +10,7 @@ Date,Location,Class,Course Week,Year week,Day,Time,Teacher,Reading,Topic
 23-09-2025,5344-101,9,5,39,Tuesday,12:00-14:00,Frederik,Edsberg_BCs p 119 and video https://youtu.be/p-tKwzYB2lw,Boundary conditions for PDEs
 25-09-2025,5220-318,10,5,39,Thursday,08:00:10:00,Frederik,Effect of dx video https://youtu.be/KAYrrKweVEo,Continue exercises on 1D models and BCs
 30-09-2025,1170-347,11,6,40,Tuesday,12:00-14:00,Frederik,presentation of problem solutions by students,Review of exercises presentations
-02-10-2025,5220-318,12,6,40,Thursday,08:00:10:00,Frederik, ,2D models and COMSOL demo
+02-10-2025,5220-318,12,6,40,Thursday,08:00:10:00,Frederik,videos https://youtu.be/qHswD6UVBJI and https://youtu.be/1Vp0pa1BHJE,2D models and COMSOL demo
 07-10-2025,5344-101,13,7,41,Tuesday,12:00-14:00,Frederik,Edsberg_stability,Stability of ODEs
 09-10-2025,5220-318,14,7,41,Thursday,08:00:10:00,Frederik,Edsberg_stability,Stability of ODEs and midterm evaluation
 14-10-2025,,,BREAK,42,Tuesday,,,,
@@ -39,4 +39,5 @@ Date,Location,Class,Course Week,Year week,Day,Time,Teacher,Reading,Topic
 ,,,,,,,,,
 ,,,,,,,,,
 ,,,,,,,,,
+
 
