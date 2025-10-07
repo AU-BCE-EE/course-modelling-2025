@@ -118,7 +118,8 @@ def update(frame):
     ax.set_title(f"Time: {sol.t[frame]:.1f} s")
     return [pcm]
 
-ani = animation.FuncAnimation(fig, update, frames=len(sol.t), interval=500, blit=True)
+#ani = animation.FuncAnimation(fig, update, frames=len(sol.t), interval=500, blit=True)
+ani = animation.FuncAnimation(fig, update, frames=len(sol.t), interval=500, blit=False)
 plt.show()
 
 

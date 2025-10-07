@@ -13,7 +13,7 @@ Exercises - Stability
     eigenvalues and assume that the k values are positive.
 
 2.  The diffusion equation is
-    $\frac{\partial u}{\partial t} = D \, \frac{\partial^2 u}{\partial x^2}$
+    $\frac{\partial u}{\partial t} = D \frac{\partial^2 u}{\partial x^2}$
 
     Discretize the second order diffusion term with finite central
     difference. Is the system stable for the interior nodes? Does it
