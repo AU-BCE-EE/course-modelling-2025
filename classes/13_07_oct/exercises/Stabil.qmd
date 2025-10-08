@@ -27,7 +27,7 @@ Exercises - Stability
 
 4.  Imagine you have heat conduction in an iron rod of 1 meter
 
-A\)  Using the conductivity, heat capacity, and density of iron (find online). What would you recommend the time step and space discretization step to be if you were to solve the problem with explicit euler?
+A\)  Using the conductivity, heat capacity, and density of iron (find online). What would you recommend the time step to be if you were to solve the problem with explicit euler and the space step size was 0.01 m?
 
 
 5.  Use the code for explicit euler by opening the file “explicit_euler_exercise.py” inside the demos folder.
