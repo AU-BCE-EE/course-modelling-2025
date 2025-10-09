@@ -1,0 +1,341 @@
+---
+project:
+ type: website
+format:
+ gfm: default
+execute:
+  python:
+   executable: "C:/Users/au277187/AppData/Local/Programs/Python/Python311/python.exe"
+
+---
+
+Exercise solutions - Stability
+
+1.  Sugar, S is converted to ethanol, E, in a batch reactor and the ODE systems is described like this:
+
+$dS/dt = -k_1 S$
+
+$dE/dt = 2k_1 S-k_2E$
+
+Determine whether the ODE system is stable or not by analyzing the eigenvalues and assume that the k values are positive.
+
+Solution: The coefficients $k_1$ and $k_2$ are assumed constant and the system is linear. It is a LCC system! We can then reformulate it to matrix form:
+
+$du/dt = Au$
+
+where $A$ is a coefficient matrix: 
+
+$$
+A = \begin{bmatrix}
+ -k_{1} & 0 \\
+  2k_{1} & -k_{2}
+\end{bmatrix}
+$$
+
+$$
+\frac{du}{dt} = A \, u =
+\begin{bmatrix} -k_{1} & 0 \\  
+2k_{1} & -k_{2} 
+\end{bmatrix}
+\begin{bmatrix} u_{1} \\
+u_{2} 
+\end{bmatrix}
+$$
+
+```{python}
+import numpy as np
+
+k1 = 0.005
+k2 = 0.01
+A = np.array([[-k1, 0],[2*k1, -k2]])
+
+eigs = np.linalg.eigvals(A)
+
+f'the eigenvalues are all negative {eigs}, which means the system is stable'
+
+# try different k values
+k1 = 2
+k2 = 1
+A = np.array([[-k1, 0],[2*k1, -k2]])
+
+eigs = np.linalg.eigvals(A)
+
+f'the eigenvalues are all negative {eigs}, which means the system is stable'
+
+```
+
+2.  The diffusion equation is $\frac{\partial u}{\partial t} = D \, \frac{\partial^2 u}{\partial x^2}$
+
+Discretize the second order diffusion term with finite central difference. Is the system stable for the interior nodes? Does it matter how many interior nodes we have?
+
+Solution: Finite central difference for 
+
+$$
+\frac{\partial^2 u}{\partial x^2} = \frac{u_{i-1} - 2u_i + u_{i+1}}{(\Delta x)^2}
+$$
+
+The diffusion coefficient is assumed constant such that we have a LCC system. For the interior points we can make the coefficient matrix again: 
+
+$$
+\frac{du}{dt} = \frac{D}{\Delta x^2}\begin{bmatrix} -2 & 1 & 0 \\
+1 & -2 & 1 \\
+0 & 1 & -2
+\end{bmatrix}
+\begin{bmatrix}u_1\\
+u_2\\
+u_3
+\end{bmatrix}
+$$
+
+```{python}
+import numpy as np
+
+A = np.array([[-2, 1, 0],[1, -2, 1],[0, 1, -2]])
+eigs = np.linalg.eigvals(A)
+
+f'all eigenvalues are negative {eigs} so diffusion is stable'
+
+# As long D/dx**2 is positive it will not change the front sign of the eigen-
+# values, so we don't need to factor it in.
+```
+
+3. The following ODE system is non-linear find the equilibrium points and determine their stability in each equilibrium point. Make some plots to confirm your findings. 
+
+    $dF/dt = F - 0.1FB$
+
+    $dB/dt = 0.075FB - 1.5B$
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.optimize import fsolve
+import numdifftools as nd
+# dy1dt = a * y1      - b * y1 * y2
+# dy2dt = c * y1 * y2 - d * y2
+# find the equilibrium points
+a = 1
+b = 0.1
+c = 0.075
+d = 1.5
+
+def dydt(y):
+    dydt0 = a * y[0] - b * y[0] * y[1]
+    dydt1 = c * y[0] * y[1] - d * y[1]
+    return np.array([dydt0, dydt1])
+
+# find the equilibrium points. Look in two different places. 
+IC = [1,1] 
+eq = fsolve(dydt, IC)
+# (0,0) is the first point. 
+IC = [100, 100]
+eq = fsolve(dydt, IC)
+# (20, 10) is the second point
+
+# we can also try to search more systematic using a for loop
+eq = []
+
+for i in range(0, 1000, 10):
+    eq_i = fsolve(dydt, [i,i])
+    eq.append(eq_i)
+
+# filter out replicates and find uniques    
+eq_np = np.array(np.round(eq, 6))
+eqs = np.unique(eq_np, axis=0)
+
+plt.scatter(eqs[:,0], eqs[:,1]) 
+plt.xlabel('y1')
+plt.ylabel('y2')     
+  
+# trivial solution is y1 = 0, y2 = 0
+# other solution is y1 = 20, y2 = 10
+
+# numdifftools
+# make a function that can calculate the jacobian from an equilibrium point
+J_func = nd.Jacobian(dydt)
+print(J_func)
+# try the two points
+J = J_func([20, 10])
+# now calculate the eigenvalues of the jacobian!
+np.linalg.eigvals(J) # Lyapunov stable, (oscillatory) because real part 0 and imaginary part is not 0
+
+# try the other point
+J = J_func([0, 0])
+np.linalg.eigvals(J) # unstable because 1 eigval is positive. 
+
+# lets visualise it. We have 20, 10 where it is stable but oscillating (0)
+# we have a 0,0 where it is unstable in the first and stable in the second ODE (overall unstable)
+from scipy.integrate import solve_ivp
+def dydt(t,y):
+    dydt0 = a * y[0] - b * y[0] * y[1]
+    dydt1 = c * y[0] * y[1] - d * y[1]
+    return np.array([dydt0, dydt1])
+
+for i in range (-2, 2+2, 2): # vary i to confirm that it is stable around 
+# that eq point. if i gets to big it becomes unstable again. 
+# evaluate from time 0 to 20. 
+# try with initial conditions around the stability point.     
+    sol = solve_ivp(dydt, [0, 100], [20+i, 10+i], t_eval = np.arange(0, 100, 0.1))
+    plt.plot(sol.t, sol.y[0], label = 'y1')
+    plt.plot(sol.t, sol.y[1], label = 'y2')
+    
+plt.legend(loc = 1)
+plt.xlabel('time')
+plt.ylabel('animals')
+plt.show()
+
+# what about the other eq point? 
+# Of course if we use (0,0) nothing will happen (no animals can evolve) and this is the stable point.
+# but if we vary it a little will the solution then diverge from 0? (it should)
+for i in range (0, 2+2, 2):
+     sol = solve_ivp(dydt, [0, 100], [0+i, 0+i], method = "LSODA", t_eval = np.arange(0, 100, 0.1))
+     plt.plot(sol.t, sol.y[0], label = 'y1')
+     plt.plot(sol.t, sol.y[1], label = 'y2')
+    
+    
+plt.legend(loc = 1)
+plt.xlabel('time')
+plt.ylabel('animals')
+plt.show()
+```
+
+
+
+4.  Imagine you have heat conduction in an iron rod of 1 meter
+
+A\)  Using the conductivity, heat capacity, and density of iron (find online). What would you recommend the time step to be if you choose the space discretization step (dx) to be 0.01 m and you were to solve the problem with explicit euler?
+
+```{python}
+import numpy as np
+
+# constanst from internet: 
+k = 80# W/(m*K)
+cp = 450 # J/(kg*K)
+p = 7860 # kg/m3
+
+# stability scheme says that: dt <= dx**2/(2*D)
+# for heat conduction it is almost the same:
+# dt <= dx**2/(2*alpha)
+
+alpha = k/(cp*p) # m2/s
+
+# The iron rod is 1 m long. So a dx of 0.01 m seems reasonable: 
+dx = 0.01
+# lets calculate the maximum dt we can have to get stable solution!
+f'the maximum time step would be {(dx**2/(2*alpha))} seconds'
+```
+
+5. Use the code for explicit euler by opening the file “explicit_euler_exercise.py”.
+
+A\)  Read the code and try to understand what is going on, by adding you own comments. What is different from our normal approach with solve_ivp?
+
+Solution: With explicit euler we need to make a loop for time and a loop for space. before the loop for time was handled by solve_ivp(). With this explicit approach the time step is also fixed.
+
+Code with comments:
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import solve_ivp
+
+# this is explicit euler method on a 1D diffusion problem in a pipe
+
+D = 1 # diffusion coefficient
+x_start = 0 # start position of x grid
+x_end = 1 # end position of x grid
+nx = 100 # number of nodes in the space dimension
+dx = (x_end - x_start)/nx # space step size
+t_start = 0 # start time
+t_end = 1 # end time
+nt = 100 # number of nodes in the time dimension 
+dt = (t_end - t_start)/nt  # time step size
+x = np.arange(x_start, x_end + dx, dx) # x_grid
+dt/dx**2
+y = np.zeros((nt + 1, nx + 1)) # initial conditions
+A = (0.02/2)**2 * np.pi # cross sectional area of pipe in m2
+y[0, 0] = 10/(A*dx) # add your comment
+
+# outer loop is along the time dimension, 
+# because i goes to nt
+for i in range(0, nt):
+    
+    # here we set the boundary conditions for the case where we are at the 
+    # left and right boundary, respectively. This is seen in the indexing of 
+    # the second dimension. 
+    y[i + 1, 0] = y[i, 0] + dt * D * (y[i, 1] - 2*y[i, 0] + y[i, 1])/dx**2
+    y[i + 1, nx] = y[i, nx] + dt * D * (y[i, nx-1] - 2*y[i, nx] + y[i, nx-1])/dx**2
+    
+    # This is the loop that runs along the spatial dimension
+    # seen from the range(1, nx). This loops runs as an inner loop for each time step.
+    for j in range(1, nx):
+        y[i + 1, j] = y[i, j] + dt * D * (y[i, j-1] - 2*y[i, j] + y[i, j+1])/dx**2
+
+# we make the time grid    
+t_grid = np.linspace(t_start, t_end, nt + 1)
+
+# we plot the solution for every second position in the x grid.
+for i in range(0, len(x), 2):
+   plt.plot(t_grid, y[:,i])
+
+plt.show()
+```
+
+B\)  You are now going to solve the diffusion problem with this explicit euler model. But running the code as it currently is gives an unstable solution (see solution)! Adjust time and space discretization to see what happens and explain your observations.
+
+Solution: The diffusion coefficient is set to 1, so knowing it is explicit euler we can quickly calculate stability criteria! Currently dt and dx are both 0.01. Lets check if it is stable with these settings. Dt/dx\^2 \<= 0.5 for stability, but: 0.01/0.01\^2 = 100. So it is not stable. Since x_end is 1, then a dx of 0.01 seems fair enough. We can now estimate the maximum allowed dt that we can use
+
+```{python}
+dx = 0.01
+f'max dt we can use is {0.5 * dx**2}'
+```
+
+We need to change nt to 20000 to get a dt of 0.00005. Trying to solve it with nt = 10000, does not work. But going above 20000 does! We could also change the time which we integrate over, since most of the dynamics happens in the very start. Lets integrate untli 0.2 and have nt = 10000 and solve it.
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import solve_ivp
+
+# this is explicit euler method on a 1D diffusion problem in a pipe
+
+D = 1 # diffusion coefficient
+x_start = 0 # start position of x grid
+x_end = 1 # end position of x grid
+nx = 100 # number of nodes in the space dimension
+dx = (x_end - x_start)/nx # space step size
+t_start = 0 # start time
+t_end = 0.2 # end time
+nt = 10000 # number of nodes in the time dimension 
+dt = (t_end - t_start)/nt  # time step size
+x = np.arange(x_start, x_end + dx, dx) # x_grid
+dt/dx**2
+y = np.zeros((nt + 1, nx + 1)) # initial conditions
+A = (0.02/2)**2 * np.pi # cross sectional area of pipe in m2
+y[0, 0] = 10/(A*dx) # add your comment
+
+# outer loop is along the time dimension, 
+# because i goes to nt
+for i in range(0, nt):
+    
+    # here we set the boundary conditions for the case where we are at the 
+    # left and right boundary, respectively. This is seen in the indexing of 
+    # the second dimension. 
+    y[i + 1, 0] = y[i, 0] + dt * D * (y[i, 1] - 2*y[i, 0] + y[i, 1])/dx**2
+    y[i + 1, nx] = y[i, nx] + dt * D * (y[i, nx-1] - 2*y[i, nx] + y[i, nx-1])/dx**2
+    
+    # This is the loop that runs along the spatial dimension
+    # seen from the range(1, nx). This loops runs as an inner loop for each time step.
+    for j in range(1, nx):
+        y[i + 1, j] = y[i, j] + dt * D * (y[i, j-1] - 2*y[i, j] + y[i, j+1])/dx**2
+
+# we make the time grid    
+t_grid = np.linspace(t_start, t_end, nt + 1)
+
+for i in range(0, len(x), 2):
+   plt.plot(t_grid, y[:,i])
+
+plt.show()
+```
+
+C\)  Could we do something smarter to solve this problem? What method would you pick if you were to solve the problem with solve_ivp()?
+
+Solution: Yes the very small time step that was needed is very expensive computationally and it takes a long time to solve. Instead we could code an implicit euler, which does not have any stability criteria for this type of numerical problem! This would allow us to use a much larger time step, thereby increasing computation speed significantly! If we should use solve_ivp() the default method would be "RK45", but eventhough this method is of high order accuracy it is still explicit, which means it needs to satisfy stability criteria. Therefore solve_ivp would adjust to a small timestep (without you knowing it) and take some time to solve it. INstead we could choose "BDF" method which is an implicit method or we could choose "LSODA", which is very good for stiff problems like this.
