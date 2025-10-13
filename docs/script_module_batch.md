@@ -25,7 +25,7 @@ Here are the common approaches.
 
 ## IDE (integrated development environment) or script editor + console
 In this common approach programmers work on a script and run some or all as it is written or edited.
-IDEs, or "integrated development environments", are programs that facilitate this by providing text editing functionality and a way to send script code to a Python interpreter.
+IDEs, or "integrated development environments", are programs that facilitate this by providing text editing functionality and a way to send script code to a Python interpreter (also called a REPL, for read-evalulate-print loop), which evaluates the code and returns results.
 Examples of IDEs: Spyder, Visual Studio Code, PyCharm.
 1. Interactive
     * User typically has a script open and sends lines, blocks, or whole file to a console running Python interactively
@@ -38,7 +38,8 @@ Examples of IDEs: Spyder, Visual Studio Code, PyCharm.
 ## Console
 Examples: Command Prompt, PowerShell, Terminal, Bash
 1. Interactive
-    * Launch Python interpreter and type code
+    * Launch Python interpreter and type code 
+    * This interactive usage is also called working in a REPL
     * Fine for throw-away code, like small checks or experiments, but not for any code you should save
 2. Batch
     * For running completed scripts
