@@ -24,7 +24,9 @@ Once you have a script that runs a model using any of the three options summariz
 Here are the common approaches.
 
 ## IDE (integrated development environment) or script editor + console
-Example: be Spyder, Visual Studio Code, etc.
+In this common approach programmers work on a script and run some or all as it is written or edited.
+IDEs, or "integrated development environments", are programs that facilitate this by providing text editing functionality and a way to send script code to a Python interpreter.
+Examples of IDEs: Spyder, Visual Studio Code, PyCharm.
 1. Interactive
     * User typically has a script open and sends lines, blocks, or whole file to a console running Python interactively
     * IDEs streamline this with all kinds of shortcuts and features and varying levels of complexity
