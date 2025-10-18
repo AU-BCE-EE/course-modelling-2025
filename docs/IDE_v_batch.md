@@ -1,26 +1,6 @@
-# Programming and running models in Python: Clarification of some confusing options
+# Running Python code: An outline for clarification of some confusing options
 
-# Programming models
-How should you implement or program a model in Python?
-Here are three options.
-
-1. Script
-    * Everything in a single `.py` file (a script)
-    * Model may be written with or without functions
-    * Simple and quick
-    * Not very modular or reusable
-2. Module
-    * Model is defined using functions in a `.py` file (a module)
-    * The model module must then be imported for use
-    * Model could be used interactively or in a second `.py` file (a script)
-    * Better organized, clearer, more modular than option 1
-3. Package
-    * Model is defined within multiple modules 
-    * Good for organizing complicated models or projects
-    * Not used in this course
-
-# Running scripts
-Once you have a script that runs a model using any of the three options summarized above, how do you run it?
+Once you have a script that runs a model, how should you run it?
 Here are the common approaches.
 
 ## IDE (integrated development environment) or script editor + console
