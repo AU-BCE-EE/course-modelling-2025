@@ -128,7 +128,7 @@ def dynmod(rt,
 
     return(out)
 
-    def ssmod(rt,
+def ssmod(rt,
           depth,
           c_TAN_0,
           c_bg,
@@ -136,7 +136,9 @@ def dynmod(rt,
           ku,
           kl,
           hen = 2000.,
-          pka = 9.24):
+          pka = 9.24
+):
+
     """ 
     Steady-state model for ammonia volatilization from a manure storage 
     tank with constant and equal manure flow in and out and a constant
