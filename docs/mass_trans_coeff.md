@@ -14,3 +14,4 @@ This approach is commonly taken with ammonia, for better or worse.
 
 So, what numeric values might you use?
 For flow over a flat surface ("flat plate" in mass transfer terminology) and wind speeds between 0.5 and 2 m/s, correlations predict an air-side mass transfer coefficient between 0.001 and 0.01 m/s.
+These values are for concentration differences expressed in gas phase units.
