@@ -34,7 +34,7 @@ pumping rate (flow) in and out to the same value for simplicity.
 For more details on the mass balance and constitutive equations, see
 `amm_concept_model.pdf`.
 
-**Solution below** This is quite an extensive model validation below,
+**Solution below** This is quite an extensive model verification below,
 and it could still be considered incomplete! We do not expect you to do
 this much evaluation in an exercise like this.
 
