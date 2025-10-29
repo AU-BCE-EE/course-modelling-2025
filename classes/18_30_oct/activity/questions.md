@@ -14,14 +14,14 @@ out = {
 }
 ```
 
-  Explain the weird stuff in square brackets for the last three elements.
-  What is it called?
-  It might be helpful to show some examples with Python or pencil and paper.
-  Explain if (and why) you need the first colon `:` on the `"c"` line.
-  Do you need the colons at the end, after the commas?
-  Do you need the comma?
-  Could you replace the negative numbers with positive numbers to extract the same results?
-  Would that work with a variable-sized array?
+   Explain the weird stuff in square brackets for the last three elements.
+   What is it called?
+   It might be helpful to show some examples with Python or pencil and paper.
+   Explain if (and why) you need the first colon `:` on the `"c"` line.
+   Do you need the colons at the end, after the commas?
+   Do you need the comma?
+   Could you replace the negative numbers with positive numbers to extract the same results?
+   Would that work with a variable-sized array?
 
 2. Here is a representation of a numerical approach for solving a 1D diffusion problem.
 
