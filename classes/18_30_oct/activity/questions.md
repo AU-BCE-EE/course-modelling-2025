@@ -14,22 +14,22 @@ out = {
 }
 ```
 
-    Explain the weird stuff in square brackets for the last three elements.
-    What is it called?
-    It might be helpful to show some examples with Python or pencil and paper.
-    Explain if (and why) you need the first colon `:` on the `"c"` line.
-    Do you need the colons at the end, after the commas?
-    Do you need the comma?
-    Could you replace the negative numbers with positive numbers to extract the same results?
-    Would that work with a variable-sized array?
+  Explain the weird stuff in square brackets for the last three elements.
+  What is it called?
+  It might be helpful to show some examples with Python or pencil and paper.
+  Explain if (and why) you need the first colon `:` on the `"c"` line.
+  Do you need the colons at the end, after the commas?
+  Do you need the comma?
+  Could you replace the negative numbers with positive numbers to extract the same results?
+  Would that work with a variable-sized array?
 
 2. Here is a representation of a numerical approach for solving a 1D diffusion problem.
 
 <img width="1339" height="565" alt="image" src="https://github.com/user-attachments/assets/7120f7c4-14ce-4aa8-9741-5cb7eaea1f8b" />
 
-    Write and explain a mathematical equation (or Python pseudocode) for calculating diffusive flux at locations `a` and `b`.
-    Can you use this equation to come up with an equation for the derivative of solute concentration in cell 2?
-    Bonus: Is your result any different from the central difference method for calculating the time derivative of concentration?
+Write and explain a mathematical equation (or Python pseudocode) for calculating diffusive flux at locations `a` and `b`.
+Can you use this equation to come up with an equation for the derivative of solute concentration in cell 2?
+Bonus: Is your result any different from the central difference method for calculating the time derivative of concentration?
 
 3. The following code is from one of the 1D diffusion functions in the `diff_mods` module.
 
@@ -38,34 +38,34 @@ for i in range(1, n):
     dcdt[i] = D * (ca[i + 1] - 2 * ca[i] + ca[i - 1]) / dx**2
 ```
 
-    Here, 
-    * `ca` is a 1D array with solute (perhaps NaCl) concentrations for multiple nodes or cells (kg/m3), with fixed concentrations in the first and last positions  (the boundary conditions),
-    * `dcdt` is an array of time derivatives of concentration for the same nodes (kg/m3-s),
-    * `D` is diffusivity (m2/s), and
-    * `dx` is the distance between nodes (m).
-    
-    Explain or show how these two lines of code are used to calculate the time deriviative of solute concentration for all necessary nodes.
-    Use a drawing or Python code or whatever you find illuminating.
+Here, 
+* `ca` is a 1D array with solute (perhaps NaCl) concentrations for multiple nodes or cells (kg/m3), with fixed concentrations in the first and last positions  (the boundary conditions),
+* `dcdt` is an array of time derivatives of concentration for the same nodes (kg/m3-s),
+* `D` is diffusivity (m2/s), and
+* `dx` is the distance between nodes (m).
+
+Explain or show how these two lines of code are used to calculate the time deriviative of solute concentration for all necessary nodes.
+Use a drawing or Python code or whatever you find illuminating.
 
 4. It is possible to predict whether a plane wall (1D rectangular system) is cooling or heating or at steady state just based on the shape of the temperature profile. 
-    (The same could be said for concentration change and a concentration profile, but let's use heat for a change.)
-    Take a look at the two profiles below, meant to be for a grid with six nodes.
-    Explain how you can tell whether the objects are heating or cooling by applying what you know about Fourier's law.
-    Hint: It might be helpful to think about heat flux at the boundaries between nodes.
+(The same could be said for concentration change and a concentration profile, but let's use heat for a change.)
+Take a look at the two profiles below, meant to be for a grid with six nodes.
+Explain how you can tell whether the objects are heating or cooling by applying what you know about Fourier's law.
+Hint: It might be helpful to think about heat flux at the boundaries between nodes.
 
 <img width="1124" height="661" alt="image" src="https://github.com/user-attachments/assets/3407d5cb-d06c-46b7-9d9b-274b6cf0a62e" />
 
 6. 1D dynamic models typically return 2D arrays, where the rows are nodes or positions and the columns are times.
-    It can be tricky to work with these. 
-    Using some output from one of the diffusion models, explain how to tell which dimension is time and which is position, and demonstrate how to extract the following:
-    * all nodes (positions) for a specific time,
-    * all times for a specific node,
-    * all nodes for the latest time (did you use a minus sign?), and
-    * anything else that you think is useful.
-    
-    Sometimes you might need the sum of rows or columns.
-    See if you can find and explain how to use a NumPy function for calculating the sum of all rows while maintaining the different columns or vice versa.
-    For example, how can you go from this
+It can be tricky to work with these. 
+Using some output from one of the diffusion models, explain how to tell which dimension is time and which is position, and demonstrate how to extract the following:
+* all nodes (positions) for a specific time,
+* all times for a specific node,
+* all nodes for the latest time (did you use a minus sign?), and
+* anything else that you think is useful.
+
+Sometimes you might need the sum of rows or columns.
+See if you can find and explain how to use a NumPy function for calculating the sum of all rows while maintaining the different columns or vice versa.
+For example, how can you go from this
 
 ```
 0 1 2
