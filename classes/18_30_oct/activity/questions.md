@@ -25,12 +25,11 @@ Would that work with a variable-sized array?
 
 2. Here is a representation of a numerical approach for solving a 1D diffusion problem.
 
+<img width="1339" height="565" alt="image" src="https://github.com/user-attachments/assets/7120f7c4-14ce-4aa8-9741-5cb7eaea1f8b" />
 
 Write and explain a mathematical equation (or Python pseudocode) for calculating diffusive flux at locations `a` and `b`.
 Can you use this equation to come up with an equation for the derivative of solute concentration in cell 2?
 Bonus: Is your result any different from the central difference method for calculating the time derivative of concentration?
-
-
 
 3. The following code is from one of the 1D diffusion functions in the `diff_mods` module.
 
@@ -54,9 +53,11 @@ Take a look at the two profiles below, meant to be for a grid with six nodes.
 Explain how you can tell whether the objects are heating or cooling by applying what you know about Fourier's law.
 Hint: It might be helpful to think about heat flux at the boundaries between nodes.
 
-5. 1D dynamic models typically return 2D arrays, where the rows are nodes or positions and the columns are times.
+<img width="1124" height="661" alt="image" src="https://github.com/user-attachments/assets/3407d5cb-d06c-46b7-9d9b-274b6cf0a62e" />
+
+6. 1D dynamic models typically return 2D arrays, where the rows are nodes or positions and the columns are times.
 It can be tricky to work with these. 
-Using some output from one of the diffusion models, demonstrate and explain how to extract the following:
+Using some output from one of the diffusion models, explain how to tell which dimension is time and which is position, and demonstrate how to extract the following:
 * all nodes (positions) for a specific time,
 * all times for a specific node,
 * all nodes for the latest time (did you use a minus sign?), and
