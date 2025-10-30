@@ -1,13 +1,14 @@
-# 1D model topics activity
+# 1D modeling "jigsaw" activity
 Modelling 2025
 
 # Activity description
 There are five topics related to some important details of 1D transport modeling below. 
+
 ## Prepare
 You and a partner will be assigned one of them by counting off in class.
 Take about 10 - 20 minutes to come up with an answer/demonstration/explanation, using whatever approach you think is appropriate.
 You might draw a few diagrams in a notebook, write (or copy/paste) some Python code into a script, or come up with a more clever and useful approach.
-You can use any resource, including class material, internet searches (e.g., function help files), ChatGPT or other GAI, and instructors.
+You can use any resource to learn about your topic, including class material, internet searches (e.g., function help files), ChatGPT or other GAI, and instructors.
 
 ## Round 1
 ### Present
@@ -21,7 +22,7 @@ Round 1 will take around 10 minutes.
 For the next round, quickly find a new group, experts on a new topic, and repeat.
 We will take about 40 minutes to go through all the rounds.
 
-# 1.  
+# 1. Slicing `solve_ivp()` output  
 The diffusion functions in the `diff_mods` module all have code similar to this to repackage the output returned by `solve_ivp()`.
 
 ```
@@ -44,7 +45,7 @@ Do you need the comma?
 Could you replace the negative numbers with (different) positive numbers to extract the same results?
 But would that work with a variable-sized array (with fewer or more nodes)?
 
-# 2. 
+# 2. Understanding flux and concentration time derivative equations
 Here is a representation of a numerical approach for solving a 1D diffusion problem.
 
 <img width="1339" height="565" alt="image" src="https://github.com/user-attachments/assets/7120f7c4-14ce-4aa8-9741-5cb7eaea1f8b" />
@@ -53,7 +54,7 @@ Write and explain a mathematical equation (or Python pseudocode) for calculating
 Can you use this equation to come up with an equation for the derivative of solute concentration in cell 2?
 Bonus: Is your result any different from the central difference method for calculating the time derivative of concentration?
 
-# 3. 
+# 3. Time derviative code with for loop
 The following code is from one of the 1D diffusion functions in the `diff_mods` module.
 
 ```
@@ -72,7 +73,7 @@ Use a drawing or Python code or whatever you find illuminating.
 Bonus: Can you explain how it is possible to actually eliminate the loop and effectively carry out all iterations in one go using slicing?
 You can find examples of this in the diffusion model module.
 
-# 4. 
+# 4. Inferences from profile curvature
 It is possible to predict whether a plane wall (1D rectangular system) is cooling or heating or at steady state just based on the shape of the temperature profile. 
 (The same could be said for concentration change and a concentration profile, but let's use heat for a change.)
 Take a look at the two profiles below, meant to be for a grid with six nodes.
@@ -81,7 +82,7 @@ Hint: It might be helpful to think about heat flux at the boundaries between nod
 
 <img width="1124" height="661" alt="image" src="https://github.com/user-attachments/assets/3407d5cb-d06c-46b7-9d9b-274b6cf0a62e" />
 
-# 5. 
+# 5. Working with 2D arrays
 1D dynamic models typically return 2D arrays, where the rows are nodes or positions and the columns are times.
 It can be tricky to work with these. 
 Using some output from one of the diffusion models, explain how to tell which dimension is time and which is position, and demonstrate how to extract the following:
