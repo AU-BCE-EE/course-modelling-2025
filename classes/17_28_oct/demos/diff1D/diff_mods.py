@@ -34,7 +34,7 @@ def diff1D(L,
     D : float
         Diffusivity (m2/s)
     bc : list or tuple
-        Boundary conditions, fixed concentrations (g/m3), bc[0] = left or bottom, bc[1] = right or top
+        Boundary conditions, fixed concentrations (kg/m3), bc[0] = left or bottom, bc[1] = right or top
     ci : float
         Initial concentration (single value -> uniform or flat profile)
     t_eval : list, tuple, or array
@@ -136,7 +136,7 @@ def diff1D2(L,
     D : float
         Diffusivity (m2/s)
     bc : list or tuple
-        Boundary conditions, fixed concentrations (g/m3), bc[0] = left or bottom, bc[1] = right or top
+        Boundary conditions, fixed concentrations (kg/m3), bc[0] = left or bottom, bc[1] = right or top
     ci : float
         Initial concentration (single value -> uniform or flat profile)
     t_eval : list, tuple, or array
@@ -236,7 +236,7 @@ def diff1Dloopy(L,
     D : float
         Diffusivity (m2/s)
     bc : list or tuple
-        Boundary conditions, fixed concentrations (g/m3), bc[0] = left or bottom, bc[1] = right or top
+        Boundary conditions, fixed concentrations (kg/m3), bc[0] = left or bottom, bc[1] = right or top
     ci : float
         Initial concentration (single value -> uniform or flat profile)
     t_eval : list, tuple, or array
