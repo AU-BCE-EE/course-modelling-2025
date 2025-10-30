@@ -1,5 +1,25 @@
-# 1D model topics
+# 1D model topics activity
 Modelling 2025
+
+# Activity description
+There are five topics related to some important details of 1D transport modeling below. 
+## Prepare
+You and a partner will be assigned one of them by counting off in class.
+Take about 10 - 20 minutes to come up with an answer/demonstration/explanation, using whatever approach you think is appropriate.
+You might draw a few diagrams in a notebook, write (or copy/paste) some Python code into a script, or come up with a more clever and useful approach.
+You can use any resource, including class material, internet searches (e.g., function help files), ChatGPT or other GAI, and instructors.
+
+## Round 1
+### Present
+Once everyone is ready, half the groups will present the topic and your explanation to a different group of two students over four minutes, to help them understand the concept and, as appropriate, code.
+
+### Learn
+And half the groups will listen and learn for the first round.
+Round 1 will take around 10 minutes.
+
+## Rounds 2-4
+For the next round, quickly find a new group, experts on a new topic, and repeat.
+We will take about 40 minutes to go through all the rounds.
 
 # 1.  
 The diffusion functions in the `diff_mods` module all have code similar to this to repackage the output returned by `solve_ivp()`.
@@ -21,8 +41,8 @@ It might be helpful to show some examples with Python or pencil and paper.
 Explain if (and why) you need the first colon `:` on the `"c"` line.
 Do you need the colons at the end, after the commas?
 Do you need the comma?
-Could you replace the negative numbers with positive numbers to extract the same results?
-Would that work with a variable-sized array?
+Could you replace the negative numbers with (different) positive numbers to extract the same results?
+But would that work with a variable-sized array (with fewer or more nodes)?
 
 # 2. 
 Here is a representation of a numerical approach for solving a 1D diffusion problem.
@@ -49,6 +69,8 @@ Here,
 
 Explain or show how these two lines of code are used to calculate the time deriviative of solute concentration for all necessary nodes.
 Use a drawing or Python code or whatever you find illuminating.
+Bonus: Can you explain how it is possible to actually eliminate the loop and effectively carry out all iterations in one go using slicing?
+You can find examples of this in the diffusion model module.
 
 # 4. 
 It is possible to predict whether a plane wall (1D rectangular system) is cooling or heating or at steady state just based on the shape of the temperature profile. 
