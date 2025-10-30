@@ -19,7 +19,7 @@ And half the groups will listen and learn for the first round.
 Round 1 will take around 10 minutes.
 
 ## Rounds 2-4
-For the next round, quickly find a new group, experts on a new topic, and repeat.
+For the next round, quickly find a new group (experts on a new topic) and repeat.
 We will take about 40 minutes to go through all the rounds.
 
 # 1. Slicing `solve_ivp()` output  
@@ -45,7 +45,7 @@ Do you need the comma?
 Could you replace the negative numbers with (different) positive numbers to extract the same results?
 But would that work with a variable-sized array (with fewer or more nodes)?
 
-# 2. Understanding flux and concentration time derivative equations
+# 2. Intuitive flux and concentration time derivative equations
 Here is a representation of a numerical approach for solving a 1D diffusion problem.
 
 <img width="1339" height="565" alt="image" src="https://github.com/user-attachments/assets/7120f7c4-14ce-4aa8-9741-5cb7eaea1f8b" />
