@@ -25,7 +25,8 @@ def melt(mass_0,
          t_step,
          dens = 920,
          temp_freeze = 0,
-         Hf = 333000):  
+         Hf = 333000
+    ):  
 
     """ 
     Dynamic model for heat transfer to a melting block of ice, with 
@@ -71,11 +72,18 @@ def melt(mass_0,
 
         return dmdt
 
-    res = solve_ivp(rates, t_span = t_range, y0 = [mass_0], 
-                    t_eval = np.arange(t_range[0], t_range[1] + t_step, t_step))
+    res = solve_ivp(
+        rates, 
+        t_span = t_range, 
+        y0 = [mass_0], 
+        t_eval = np.arange(t_range[0], t_range[1] + t_step, t_step)
+    )
 
     # Return user-friendly results object (dictionary here)
-    out = {"t": res.t, "m": res.y[0, :]}
+    out = {
+        "t": res.t, 
+        "m": res.y[0, :]
+    }
 
     return out
 
@@ -85,7 +93,8 @@ def melt2(mass_0,
           times, 
           dens = 920,
           temp_freeze = 0,
-          Hf = 333000):  
+          Hf = 333000
+    ):  
 
     """ 
     Dynamic model for heat transfer to a melting block of ice, with 
@@ -130,11 +139,18 @@ def melt2(mass_0,
 
         return dmdt
 
-    res = solve_ivp(rates, t_span = [min(times), max(times)], y0 = [mass_0], 
-                    t_eval = times)
+    res = solve_ivp(
+        rates, 
+        t_span = [min(times), max(times)], 
+        y0 = [mass_0], 
+        t_eval = times
+    )
 
     # Return user-friendly results object (dictionary here)
-    out = {"t": res.t, "m": res.y[0, :]}
+    out = {
+        "t": res.t, 
+        "m": res.y[0, :]
+    }
 
     return out
 
@@ -144,7 +160,8 @@ def melt3(mass_0,
           times, 
           dens = 920,
           temp_freeze = 0,
-          Hf = 333000):  
+          Hf = 333000
+    ):  
 
     """ 
     Dynamic model for heat transfer to a melting block of ice, with 
@@ -177,6 +194,9 @@ def melt3(mass_0,
     # Define rates function
     def rates(t, mass_t):
 
+        if mass_t < 0:
+            mass_t = 0
+
         # Get current exposed upper area, assuming hemisphere
         area = 1/2 * np.pi * (3 * mass_t / (2 * np.pi * dens))**(2/3)
 
@@ -188,11 +208,18 @@ def melt3(mass_0,
 
         return dmdt
 
-    res = solve_ivp(rates, t_span = [min(times), max(times)], y0 = [mass_0], 
-                    t_eval = times)
+    res = solve_ivp(
+        rates, 
+        t_span = [min(times), max(times)], 
+        y0 = [mass_0], 
+        t_eval = times
+    )
 
     # Return user-friendly results object (DataFrame)
-    out = pd.DataFrame({"time": res.t, "mass": res.y[0, :]})
+    out = pd.DataFrame({
+        "time_sec": res.t, 
+        "mass_kg": res.y[0, :]
+    })
 
     return out
 
