@@ -32,8 +32,14 @@ Film thickness is usually calculated based on measurements of mass transfer, but
 For designated liquid mass transfer systems, values are usually around $1 \cdot 10^{-4}$ m (Cussler, 2009).
 For ponds, lakes, or oceans, effective values of the film thickness can be multiple mm, so up to, say, $5 \cdot 10^{-3}$ m.
 
+Diffusivity depends on both the diffusing component and what it is diffusing through.
+The values above give you some idea of what to expect (and you can find more values in [Cussler's Chapter 5](https://brightspace.au.dk/d2l/le/lessons/184142/topics/2523814)).
+In general, diffusion coefficients in water are around $10^{-9} ~ \text{m}^2 ~ \text{s}^{-1}$ and in air, around $10^{-5} ~ \text{m}^2 ~ \text{s}^{-1}$.
+Diffusivity decreases with the size of the diffusing molecule.
+
 ## Reaction rates
 
+### First-order
 First-order reaction constants can be estimated given some knowledge (or a guess) about how fast a reaction proceeds.
 For a rough estimate, the relative rate of reaction can be taken directly as the rate constant.
 So, for example, if some reactant disappears at a rate of 3.5% per hour, the rate constant is around 0.035 $\text{hr}^{-1}$.
@@ -47,3 +53,12 @@ $$
 where $k$ is the first-order rate constant, $c_t$ is the remaining reactant concentration after $\Delta t$ time, and $c_0$ is the initial value (mass could be used instead of concentration).
 
 
+### Second-order
+Second-order reactions are a little trickier, but just a little.
+Here is a simple approach.
+
+1. Determine the change in a reactant over time when the second reactant is held constant (or make a guess).
+2. Apply the equation above.
+3. Divide the result by the fixed concentration of the second reactant.
+
+Units on a second-order reaction rate constant are inverse concentration per unit time.
