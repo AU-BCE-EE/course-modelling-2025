@@ -22,9 +22,9 @@ If the primary resistance to mass transfer is through a thin film, diffusivity a
 The film may be real (e.g., a plastic membrane) or hypothesized (e.g., the stagnant fluid films at interfaces between phases).
 The appropriate equation can be derived from Fick's law under steady-state conditions, 
 
-$$$
+$$
 k_c = \frac{D}{L},
-$$$
+$$
 
 where $L$ is the film thickness (length, typically m), and $D$ is diffusivity (typically $\text{m}^2 ~ \text{s}^{-1}$).
 
@@ -40,8 +40,8 @@ So, for example, if some reactant disappears at a rate of 3.5% per hour, the rat
 This approach fails if the measured change is large, e.g., 50% over some period.
 Instead, use the exact analytical approach:
 
-$$$
+$$
 k = - \frac{ln(\text{relative change})}{\Delta t}.
-$$$
+$$
 
 
