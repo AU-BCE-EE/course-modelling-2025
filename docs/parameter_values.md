@@ -36,13 +36,17 @@ Diffusivity depends on both the diffusing component and what it is diffusing thr
 The values above give you some idea of what to expect (and you can find more values in [Cussler's Chapter 5](https://brightspace.au.dk/d2l/le/lessons/184142/topics/2523814)).
 In general, diffusion coefficients in water are around $10^{-9} ~ \text{m}^2 ~ \text{s}^{-1}$ and in air, around $10^{-5} ~ \text{m}^2 ~ \text{s}^{-1}$.
 Diffusivity decreases with the size of the diffusing molecule.
+So for big molecules like sucrose, it is under $1 \cdot 10^{-9} ~ \text{m}^2 ~ \text{s}^{-1}$ and for huge molecules like hemogolbin it is under $1 \cdot 10^{-10} ~ \text{m}^2 ~ \text{s}^{-1}$.
+Diffusivity for diffusion through solids can be several or many orders of magnitude lower.
 
 ## Reaction rates
 
 ### First-order
 First-order reaction constants can be estimated given some knowledge (or a guess) about how fast a reaction proceeds.
 For a rough estimate, the relative rate of reaction can be taken directly as the rate constant.
-So, for example, if some reactant disappears at a rate of 3.5% per hour, the rate constant is around 0.035 $\text{hr}^{-1}$.
+So, for example, if some reactant disappears at a rate of 3.5% per hour, the rate constant is around 0.035 $\text{hr}^{-1}$, or $9.7 \cdot 10^{-6} ~ \text{s}^{-1}$.
+Notice how small the values can be when expressed in the units we typically use!
+
 This approach fails if the measured change is large, e.g., 50% over some period.
 Instead, use the exact analytical approach,
 
@@ -62,3 +66,4 @@ Here is a simple approach.
 3. Divide the result by the fixed concentration of the second reactant.
 
 Units on a second-order reaction rate constant are inverse concentration per unit time.
+
