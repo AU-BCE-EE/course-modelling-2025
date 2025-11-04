@@ -38,10 +38,12 @@ First-order reaction constants can be estimated given some knowledge (or a guess
 For a rough estimate, the relative rate of reaction can be taken directly as the rate constant.
 So, for example, if some reactant disappears at a rate of 3.5% per hour, the rate constant is around 0.035 $\text{hr}^{-1}$.
 This approach fails if the measured change is large, e.g., 50% over some period.
-Instead, use the exact analytical approach:
+Instead, use the exact analytical approach,
 
 $$
-k = - \frac{ln(\text{relative change})}{\Delta t}.
+k = - \frac{\ln(c_t / c_0)}{\Delta t},
 $$
+
+where $k$ is the first-order rate constant, $c_t$ is the remaining reactant concentration after $\Delta t$ time, and $c_0$ is the initial value (mass could be used instead of concentration).
 
 
