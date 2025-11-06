@@ -30,7 +30,7 @@ x_grid = np.arange(0, L+ dx, dx)
 def rates(t, c, dx, x_grid):
     
     dcdt = np.zeros(len(x_grid))
-    N = len(x_grid)-1
+    N = len(x_grid)
     
     dcdt[0] = 0
     dcdt[-1] = 0
@@ -56,7 +56,7 @@ sol = solve_ivp(rates, t_span = [0, tmax], y0 = c0, method = 'LSODA',
 def rates2(t, c, dx, x_grid, c_left, c_right):
     
     dcdt = np.zeros(len(x_grid))
-    N = len(x_grid)-1
+    N = len(x_grid)
 
     # instead of fixing dcdt = 0, we use the governing equation and 
     # put c_left at the position before c[0]  
