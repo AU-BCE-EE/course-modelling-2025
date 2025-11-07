@@ -89,6 +89,11 @@ O2 = sol.y[:len(x_grid),:]
 total = np.trapz(O2, x_grid, axis = 0)
 # the last value in that integration is the total amount of O2 at the last time point
 last_total = total[-1]
+last_total
+# Alternatively to np.trapz, we could also calcualte the sum of O2 in the domain by multipling interior points with dx
+# and end points with dx/2 and taking the sum of that. 
+total_alternative = np.sum(O2[1:-1, -1] * dx) + np.sum(O2[[0,-1],-1] * dx/2)
+total_alternative
 
 # we do the same for method 2
 O2_2 = sol2.y[:len(x_grid),:]
