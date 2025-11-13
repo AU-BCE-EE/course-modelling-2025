@@ -10,18 +10,18 @@ You can also assume that it takes 1 gram of oxygen to degrade 1 gram of OM.
 ## 1. Model development
 The first task is to develop the 1D model of the wastewater tank with oxygen and OM as state variables. 
 Include a sketch of the model and the system boundary.
-Describe how you formulated the model and what assumptions you made, including information on the coordinate system, simplification of the governing equations, boundary conditions, and initial conditions.   
+Describe how you formulated the model and what assumptions you made, including information on the coordinate system, simplification of the governing equations, boundary conditions, and initial conditions.
 For your Python code, you should use a module-based approach for your model (define a model function in a `*.py` module and then write the code for verification, validation, and application in separate `*.py` scripts).
 Be sure to comment your code enough that someone could understand it without input from you!
 That information should be present in docstrings and single line comments.
 
 ## 2. Model verification
 Carry out some limited verification of your model by using some of the concepts taught in class. 
-Make sure that one of your verification checks includes mass conservation.  
+Make sure that one of your verification checks includes mass conservation.
 Include documentation of your verification in an appendix, using whatever format or approach you think is appropriate.
 
 ## 3. Model validation
-An engineer at the wastewater plant measured the concentration of dissolved oxygen near the bottom of a 10 cm deep lagoon over a couple months, starting right after filling.  
+An engineer at the wastewater plant measured the concentration of dissolved oxygen near the bottom of a 10 cm deep lagoon over a couple months, starting right after filling.
 The measurement data are in the `meas_O2.csv` file. 
 The filling process effectively aerated the wastewater at the start, but as you can see in the measurements, dissolved oxygen concentration declined over the following days.
 The initial OM concentration was 0.02 kg/m3 (20 mg/L).
