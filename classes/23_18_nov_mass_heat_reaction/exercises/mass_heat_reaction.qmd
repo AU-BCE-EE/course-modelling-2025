@@ -54,4 +54,4 @@ D\)  Try to add the products to the rates function as well and plot it together 
 
 E\) Consider how you could change this problem (in part A and B) into a 1D model?
 
-F\) Difficult exercise: Expand your 0D model to a 1D model. You can assume the following. The model will include the horizontal dimension in the reactor and with heat transfer through the side walls due to the cooling jacket. Keep the parameters from the 0D exercise. The diameter of the tank is 0.5 meter and still contains only 100 L working volume. The initial concentration everywhere is similar to the 0D problem (1 mole/L). 
+F\) Difficult exercise: Expand your 0D model to a 1D model. You can assume the following. The model will include the horizontal (radial) dimension in the reactor and with heat transfer through the side walls due to the cooling jacket. Make use of symmetry across the centerline of the reactor. Keep the parameters from the 0D exercise. The diameter of the tank is 0.5 meter and still contains only 100 L working volume. The initial concentration everywhere is similar to the 0D problem (1 mole/L). 
