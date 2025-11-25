@@ -48,7 +48,7 @@ def O2dc(
     O2_sat : float
         Saturation O2 concentration (kg/m3)
     D : dictionary of two floats
-        Diffusivity of O2 and BOD with names 'O2' and 'OM' (kg/m3)
+        Diffusivity of O2 and BOD with names 'O2' and 'OM' (m2/s)
 
     Returns
     -------
