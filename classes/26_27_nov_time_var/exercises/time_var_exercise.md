@@ -5,6 +5,7 @@ Test your model by comparing OM predictions for the middle of the lagoon from th
 
 ## Hints and tips
 In the melting ice demo it was an input *variable* that we varied, while here it is a model *parameter*.
-But the same concepts and programming applies.
+But the same concepts and programming apply.
 
-If you have trouble seeing a difference, shorten the model run time and make sure you use a high resolution.
+If you have trouble seeing a difference in model output, shorten the model run time and make sure you use a high resolution.
+Also be sure to export the time-variable `k` value from the model function for checking.
