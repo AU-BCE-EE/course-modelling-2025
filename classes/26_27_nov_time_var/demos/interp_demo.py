@@ -4,9 +4,7 @@ Author: Sasha D. Hafner
 Course: Modelling 2025
 
 Description:
-    This module defines a numerical model for disappearance of a 
-    melting block of ice. Assumes hemispherical shape and no heat
-    transfer through bottom.
+    This script is a demo of interpolation.
 
 Usage:
     See the melt_demo.py file for examples.
