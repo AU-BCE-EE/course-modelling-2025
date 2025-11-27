@@ -37,7 +37,7 @@ def meltv(mass_0,
     ----------
     mass_0 : float
         Initial mass of ice (kg) 
-    air_temp : DataFrame
+    air_temp_dat : DataFrame
         Air temperature over time as a Pandas DataFrame with columns `time` (s) and `temp` (deg. C)
     h : float
         Convection heat transfer coefficient (W/m2-K)

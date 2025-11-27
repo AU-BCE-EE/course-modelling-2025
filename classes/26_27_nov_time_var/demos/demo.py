@@ -26,9 +26,20 @@ air_temp = pd.DataFrame(
     }
 )
 
+air_temp
+
 air_temp.loc[2, "temp"] = 28
 
+air_temp
+
 # These might normally be measured!
+
+pred00 = im.melt(
+    mass_0 = 0.050, 
+    air_temp = 20, 
+    h = 120, 
+    times = 3600 * np.linspace(0, 3, 70),
+)
 
 # Now try model
 pred01 = im.meltv(
