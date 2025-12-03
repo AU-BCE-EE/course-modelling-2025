@@ -33,7 +33,8 @@ def rates(t, c, dx, x_grid):
     # -D * (c[0+1] - c[0-1])/(2*dx) = 0: c[0-1] = c[0+1]
     
     dcdt[0] = D * (c[1] - 2 * c[0] + c[1])/dx**2
-    #J = -D*dc/dx = 0: -D * (c[i+1] - c[i-1])/(2*dx) = 0
+    # J = -D*dc/dx = 0: -D * (c[i+1] - c[i-1])/(2*dx) = 0
+    # At boundary:
     # -D * (c[N+1] - c[N-1])/(2*dx) = 0: c[N+1] is the ghost point
     # c[N+1] = c[N-1]
     
