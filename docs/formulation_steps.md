@@ -17,3 +17,4 @@
 4. Figure out what BC's and IC's you have
 5. Implement in python by handling interior nodes and BC nodes separately
 
+
